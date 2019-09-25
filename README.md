@@ -16,6 +16,8 @@
 
 # 亚特兰斯物语·和 :id=get-started
 
+>アトラス物語‐「と」| Atorasumonogatari-to
+
 ?> 本网站旨在为所有玩家提供一个简洁明了、能够快速上手的指南。
 
 本网站并不是针对 Minecraft 游戏本身的知识库，它主要介绍「亚特兰斯物语 Minecraft 服务器」的特色内容。如果你想了解游戏本身的内容与玩法，请访问：🔗[Minecraft 官方百科][mcwiki]。如果是刚接触这款游戏，可以参考：🍰[菜鸟手册][beginner-guide]。
