@@ -1,5 +1,5 @@
 [homepage]: https://kamikuz.cn/
-[dynmap]: http://s24.natfrp.org:25159/
+[dynmap]: http://map.kamikuz.cn:8123
 [qqgroup]: https://jq.qq.com/?_wv=1027&k=576OUne
 [teams]: https://teams.microsoft.com/l/channel/19%3aad996bf09baf4f9b830461f85539ecfc%40thread.skype/%25E4%25BA%259A%25E7%2589%25B9%25E5%2585%25B0%25E6%2596%25AF%25E7%2589%25A9%25E8%25AF%25AD%25C2%25B7%25E5%2592%258C?groupId=c15b399b-3daa-40f5-90fe-bcd4f8919cc2&tenantId=9507e1f2-06f8-485d-8f58-9b7859f6a87d
 [mcwiki]: https://minecraft-zh.gamepedia.com/
