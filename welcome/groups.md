@@ -58,7 +58,7 @@
 ### 拥有权限
 
 ----
-## 👨‍🎨RTM工程师·Designer :id=designer
+## 👨‍🎨红石工程师·Designer :id=designer
 
 ![红石证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/rs.png)
 
