@@ -31,7 +31,7 @@
 
 ## 👨‍🏭1级建筑师·Builder Lv.1 :id=adv
 
-![1级证明](../assets/images/class/B1.png ':size=100')
+![1级证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/B1.png)
 
 ### 获得条件
 
@@ -41,7 +41,7 @@
 
 ## 👨‍🏭2级建筑师·Builder Lv.2 :id=crafter
 
-![2级证明](../assets/images/class/B2.png ':size=100')
+![2级证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/B2.png)
 
 ### 获得条件
 
@@ -51,7 +51,7 @@
 
 ## 👷‍3级建筑师·Builder Lv.3 :id=arch
 
-![3级证明](../assets/images/class/B3.png ':size=100')
+![3级证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/B3.png)
 
 ### 获得条件
 
@@ -60,7 +60,7 @@
 ----
 ## 👨‍🎨RTM工程师·Designer :id=designer
 
-![红石证明](../assets/images/class/rs.png ':size=100')
+![红石证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/rs.png)
 
 ### 获得条件
 
@@ -70,7 +70,7 @@
 
 ## 👨‍🎨RTM工程师·Designer :id=designer
 
-![RTM证明](../assets/images/class/rtm.png ':size=100')
+![RTM证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/rtm.png)
 
 ### 获得条件
 
@@ -80,7 +80,7 @@
 
 ## 🎭最高执行官·OP :id=op
 
-![OP证明](../assets/images/class/op.png ':size=100')
+![OP证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/op.png)
 
 「最高执行官」属于服务器的决策层，主要负责技术开发和重大决策。
 
