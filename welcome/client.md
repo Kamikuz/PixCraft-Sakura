@@ -1,6 +1,6 @@
 [download1]: https://lg-4b83vi3o-1257205190.cos.ap-shanghai.myqcloud.com/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD/%E5%92%8C/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.0.zip
 [download2]: https://litestudio927.sharepoint.com/sites/LiteStudio/Shared%20Documents/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF-%E9%93%81%E8%B7%AF/%E5%AE%A2%E6%88%B7%E7%AB%AF/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.0.zip
-[error]:  /error.md
+[error]: https://github.com/Kamikuz/Atorasumonogatarito/issues
 [error1]: /error.md#1
 [faq]: /welcome/faq.md
 
