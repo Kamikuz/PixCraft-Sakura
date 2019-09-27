@@ -1,5 +1,5 @@
-[download1]: https://lg-4b83vi3o-1257205190.cos.ap-shanghai.myqcloud.com/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD/%E5%92%8C/RTM-PC%20Alpha%202.0.1.zip
-[download2]: https://teams.microsoft.com/l/channel/19%3aad996bf09baf4f9b830461f85539ecfc%40thread.skype/%25E4%25BA%259A%25E7%2589%25B9%25E5%2585%25B0%25E6%2596%25AF%25E7%2589%25A9%25E8%25AF%25AD%25C2%25B7%25E5%2592%258C?groupId=c15b399b-3daa-40f5-90fe-bcd4f8919cc2&tenantId=9507e1f2-06f8-485d-8f58-9b7859f6a87d
+[download1]: https://lg-4b83vi3o-1257205190.cos.ap-shanghai.myqcloud.com/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD/%E5%92%8C/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.0.zip
+[download2]: https://litestudio927.sharepoint.com/sites/LiteStudio/Shared%20Documents/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF-%E9%93%81%E8%B7%AF/%E5%AE%A2%E6%88%B7%E7%AB%AF/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.0.zip
 [error]:  /error.md
 [error1]: /error.md#1
 [faq]: /welcome/faq.md
@@ -10,7 +10,7 @@
 
 ### 🖥️基础要求
 
->内存：`>= 4600MB`(配置可以的同学可以将内存设置为8000MB或8G以支持光影)。否则会出现
+>内存：`>= 3000MB`(配置可以的同学可以将内存设置为4000MB或4G以上支持光影)。否则会出现游戏启动缓慢，进入后间歇性卡顿！
 
 显卡：`基础的Minecraft能跑就可以了`
 
@@ -21,10 +21,12 @@ CUP：`最好i5 8代以上`
 !>Java版本 `64位 1.8.x 及以上`否则会出现[错误1的情况][error1]
 
 ### 下载
+!>⚠️`Alpha2.x`版本的童鞋请重新下载新版本！服务器将不再支持`2.x`版本的客户端！⚠️
+!>>⚠️请勿使用内部的更新程序进行更新!一定要重新下载！⚠️
 
-- [☁️Microsoft Teams团队下载][download2]    版本号 `2.1.0`
+- [☁️Microsoft Teams团队下载][download2]    版本号 `3.0`
 
-- [☁️备用下载(速度慢的点这里)][download1]   版本号 `2.1.0`
+- [☁️备用下载(速度慢的点这里)][download1]   版本号 `3.0`
 
 ### 配置
 
