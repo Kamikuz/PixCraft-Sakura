@@ -48,7 +48,8 @@ CUP：`最好i5 8代以上`
 Step 1：启动`更新程序.exe`以确保客户端处于最新版本。更新完后会显示`启动游戏`
 
 Step 2：启动器打开后会出现以下窗口：
-![登录页面](assets/images/client/login.png ':size=400')
+
+![登录页面](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/client/login.png ':size=300')
 
 ！>请直接填写`用户名`和`密码` (没有注册的旁边有`注册`按钮) 完成后就会显示与官网个人中心相同的皮肤人物。
 
