@@ -80,11 +80,7 @@
 
 ## 🎭风纪委·Ruler :id=ruler
 
-![OP证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/op.png)
-
-「最高执行官」属于服务器的决策层，主要负责技术开发和重大决策。
-
-### 拥有权限
+>目前该职位正在决策中！ 后期会开放！
 
 ----
 
