@@ -1,4 +1,4 @@
-# 亚特兰斯物语·和 Minecraft <small>RTM|红石计划</small> :id=cover
+# アトラス物語‐「と」| 亚特兰斯物语·和<small>Minecraft 1.7.10</small> :id=cover
 
 <!-- - 简单、可靠；正版、非盈利 -->
 - 日系，电车
@@ -7,7 +7,8 @@
 
 > 打造自己的二次元幻想城！
 
-[官网](https://mc.kamikuz.cn)
+[皮肤站](https://mc.kamikuz.cn)
 [加入我们](#get-started)
+[MCMOD宣传站](https://play.mcmod.cn/sv20182663.html)
 
 ![background](assets/images/bg.png)
