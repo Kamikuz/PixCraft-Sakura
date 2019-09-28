@@ -58,7 +58,7 @@
 ### 拥有权限
 
 ----
-## 👨‍🎨红石工程师·Designer :id=designer
+## 👨‍🎨红石工程师·RS Engine :id=rsengine
 
 ![红石证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/rs.png)
 
@@ -68,11 +68,21 @@
 
 ----
 
-## 👨‍🎨RTM工程师·Designer :id=designer
+## 👨‍🎨RTM工程师·RTM Engine :id=rtmengine
 
 ![RTM证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/rtm.png)
 
 ### 获得条件
+
+### 拥有权限
+
+----
+
+## 🎭风纪委·Ruler :id=ruler
+
+![OP证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/op.png)
+
+「最高执行官」属于服务器的决策层，主要负责技术开发和重大决策。
 
 ### 拥有权限
 
@@ -83,6 +93,8 @@
 ![OP证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/op.png)
 
 「最高执行官」属于服务器的决策层，主要负责技术开发和重大决策。
+
+### 拥有权限
 
 ----
 
