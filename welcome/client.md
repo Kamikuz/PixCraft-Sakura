@@ -1,5 +1,5 @@
-[download1]: https://lg-4b83vi3o-1257205190.cos.ap-shanghai.myqcloud.com/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD/%E5%92%8C/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.0.zip
-[download2]: https://litestudio927.sharepoint.com/sites/LiteStudio/Shared%20Documents/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF-%E9%93%81%E8%B7%AF/%E5%AE%A2%E6%88%B7%E7%AB%AF/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.0.zip
+[download1]: https://lg-4b83vi3o-1257205190.cos.ap-shanghai.myqcloud.com/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD/%E5%92%8C/updates.zip
+[download2]: https://litestudio927.sharepoint.com/sites/LiteStudio/Shared%20Documents/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF-%E9%93%81%E8%B7%AF/%E5%AE%A2%E6%88%B7%E7%AB%AF/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.1.zip
 [error]: https://github.com/Kamikuz/Atorasumonogatarito/issues
 [error1]: /error.md#1
 [faq]: /welcome/faq.md
@@ -24,9 +24,9 @@ CUP：`最好i5 8代以上`
 !>⚠️`Alpha2.x`版本的童鞋请重新下载新版本！服务器将不再支持`2.x`版本的客户端！⚠️
 >>⚠️请勿使用内部的更新程序进行更新!一定要重新下载！⚠️
 
-- [☁️Microsoft Teams团队下载][download2]    版本号 `3.0`
+- [☁️Microsoft Teams团队下载][download2]    版本号 `3.1`
 
-- [☁️备用下载(速度慢的点这里)][download1]   版本号 `3.0`
+- [☁️备用下载(速度慢的点这里)][download1]   版本号 `3.1`
 
 ### 配置
 
