@@ -6,7 +6,7 @@
 [beginner-guide]: http://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E8%8F%9C%E9%B8%9F%E6%89%8B%E5%86%8C
 [skin]: https://mc.kamikuz.cn/
 [java]: https://www.java.com/en/download/manual.jsp
-[client-download]: https://lg-4b83vi3o-1257205190.cos.ap-shanghai.myqcloud.com/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD/%E5%92%8C/RTM-PC%20Alpha%202.0.1.zip
+[client-download]: https://lg-4b83vi3o-1257205190.cos.ap-shanghai.myqcloud.com/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD/%E5%92%8C/updates.zip
 [group-def]: /welcome/groups.md#def
 [group-adv]: /welcome/groups.md#adv
 [server-survival]: /welcome/servers.md#survival
@@ -30,7 +30,7 @@
 
 服务器版本：`1.7.10` *城市建造* 
 
-网络配置：`北京BGP多线|海外`
+网络配置：`国内|海外`
 
 正版验证：`未开启`
 
@@ -56,9 +56,9 @@
 
 > 📌请使用下面的专用启动器。否则进服时会提示“登录无效：账户验证失败”📌
 
-☁️[Teams团队里面](https://teams.microsoft.com/_#/files/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C?groupId=c15b399b-3daa-40f5-90fe-bcd4f8919cc2&threadId=19%3Aad996bf09baf4f9b830461f85539ecfc%40thread.skype&ctx=channel&context=%25E5%25AE%25A2%25E6%2588%25B7%25E7%25AB%25AF)下载
+☁️[Teams团队里面](https://litestudio927.sharepoint.com/sites/LiteStudio/Shared%20Documents/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF-%E9%93%81%E8%B7%AF/%E5%AE%A2%E6%88%B7%E7%AB%AF/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.1.zip)下载 `3.1`
 
-☁️[国内备用][client-download]下载
+☁️[国内备用][client-download]下载 `3.1`
 
 !> 请优先点击`更新程序.exe`来检查客户端的更新！
 
