@@ -31,6 +31,14 @@ nav{
   border-radius: 15px;
 }
 
+nav a:hover {
+	color: rgb(253,249,123);				
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: rgba(253,249,123,0.2);
+  padding: 15px;
+}
+
 nav ul{
   width: 100%;
 }
