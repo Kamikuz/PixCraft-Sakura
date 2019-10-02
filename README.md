@@ -7,7 +7,6 @@
 [beginner-guide]: http://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E8%8F%9C%E9%B8%9F%E6%89%8B%E5%86%8C
 [skin]: https://mc.kamikuz.cn/
 [java]: https://www.java.com/en/download/manual.jsp
-[client-download]: https://lg-4b83vi3o-1257205190.cos.ap-shanghai.myqcloud.com/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD/%E5%92%8C/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.1.zip
 [group-def]: /welcome/groups.md#def
 [group-adv]: /welcome/groups.md#adv
 [server-survival]: /welcome/servers.md#survival
@@ -43,7 +42,7 @@
 
 ## 加入游戏 :id=join-us
 
-?> 加入我们的服务器很简单！你只需一个 *游戏账号* 和 *专用启动器* (｀・ω・´)
+?> 加入我们的服务器很简单！你只需一个 *游戏账号* 和 *最新版本的客户端* (｀・ω・´)
 
 ### 1 注册账号
 
@@ -59,9 +58,9 @@
 
 > 📌请使用下面的专用启动器。否则进服时会提示“登录无效：账户验证失败”📌
 
-☁️[Teams团队里面](https://litestudio927.sharepoint.com/sites/LiteStudio/Shared%20Documents/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF-%E9%93%81%E8%B7%AF/%E5%AE%A2%E6%88%B7%E7%AB%AF/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.1.zip)下载 `3.1`
+☁️[Teams团队里面](https://litestudio927.sharepoint.com/sites/LiteStudio/Shared%20Documents/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF-%E9%93%81%E8%B7%AF/%E5%AE%A2%E6%88%B7%E7%AB%AF/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.1.zip)版本:`3.1`
 
-☁️[国内备用][client-download]下载 `3.1`
+☁️[下载页面][downloadpage]版本: `3.1`
 
 !> 请优先点击`更新程序.exe`来检查客户端的更新！
 
