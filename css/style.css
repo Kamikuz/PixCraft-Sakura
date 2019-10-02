@@ -9,6 +9,7 @@
 
 body {
   background-image: url(../assets/images/bg.png);
+  background-size: cover;
   color: var(--color);
   font-family: var(--font);
 }
@@ -42,7 +43,7 @@ nav ul li{
 
 main{
   width: 90%;
-  margin: auto;
+  margin: 20px auto;
   border-radius: 15px;
   background-color: rgba(0,0,0,0.5);
   padding:20px;
