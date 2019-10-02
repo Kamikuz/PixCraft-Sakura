@@ -4,6 +4,12 @@
 
 body {
   background-image: url(../assets/images/bg.png);
+  color: #FFC408;
+}
+
+nav{
+  background-color: #434343;
+  border-radius: 15px;
 }
 
 nav ul{
@@ -54,4 +60,14 @@ li{
 
 .cover{
 
+}
+
+.download {
+  background-color: white;
+  border: 2px solid #555555;
+}
+
+.download:hover {
+  background-color: #555555;
+  color: white;
 }
