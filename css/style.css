@@ -55,6 +55,7 @@ img {
   display: block;
   border-radius: 20px 20px 0 0;
   margin: auto;
+  
 }
 
 h1,h2,h3 {
@@ -70,6 +71,10 @@ section{
   border:2px solid white;
   border-radius: 20px;
   margin:30px auto;
+}
+
+footer{
+  text-align: center;
 }
 
 
@@ -94,7 +99,16 @@ section{
   margin: 10px auto;
   height: 40px;
   width: 50%;
-  
+}
+
+.update{
+  background-color: white;
+  border: 2px solid #555555;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  height: 40px;
+  width: 50%;
 }
 
 .download:hover {
