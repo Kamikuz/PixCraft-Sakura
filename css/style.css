@@ -23,7 +23,7 @@ a {
 
 a:hover {
 	color: rgb(253,249,123);				
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 nav{
