@@ -1,3 +1,41 @@
+* {
+	transition-duration: 0.5s;
+}
+
+body {
+  background-image: url(../assets/images/bg.png);
+}
+
+nav ul{
+  margin: auto;
+  width: 100%;
+}
+
+nav ul li{
+  display: inline-block;
+  width: 20%;
+  padding: 10px;
+  
+}
+
+main{
+  width: 90%;
+  margin: auto;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.5);
+  padding:20px;
+}
+
+h1,h2,h3 {
+  text-align: center;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+/*class areas*/
 .least{
 
 }
