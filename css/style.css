@@ -50,7 +50,7 @@ main{
 
 img {
   max-width: 100%;
-  width: 40%;
+  width: 100%;
   display: block;
   border-radius: 15px;
   margin: auto;
@@ -64,10 +64,16 @@ li{
   list-style-type: none;
 }
 
+section{
+  width: 50%;
+  border:2px solid white;
+  border-radius: 20px;
+}
+
 
 /*class areas*/
 .least{
-
+  
 }
 
 .history{
