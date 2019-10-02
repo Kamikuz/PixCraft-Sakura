@@ -95,9 +95,12 @@
 		<footer></footer>
 	</div>
 	<script>
-    new Vue({
-        el: '#app',
-    })
+    var Main = {
+    	
+    }
+
+	var Component = Vue.extend(Main)
+	new Component().$mount('#app')
   </script>
 </body>
 </html>
