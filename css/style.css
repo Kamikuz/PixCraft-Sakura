@@ -1,6 +1,8 @@
 :root{
   --font: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  --color: #FFC408
+  --color: #FFC408;
+  --bg-color:#434343;
+  --bg-img: url(../assets/images/bg.png)
 }
 
 * {
@@ -8,7 +10,7 @@
 }
 
 body {
-  background-image: url(../assets/images/bg.png);
+  background-image: var(--bg-img);
   background-size: cover;
   color: var(--color);
   font-family: var(--font);
@@ -25,7 +27,7 @@ a:hover {
 }
 
 nav{
-  background-color: #434343;
+  background-color: var(--bg-color);
   border-radius: 15px;
 }
 
@@ -66,11 +68,16 @@ li{
   list-style-type: none;
 }
 
+span{
+  
+}
+
 section{
   width: 30%;
   border:2px solid white;
   border-radius: 20px;
   margin:30px auto;
+  background-color: var(--bg-color);
 }
 
 footer{
