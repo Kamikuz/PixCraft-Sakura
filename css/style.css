@@ -97,7 +97,7 @@ footer{
 }
 
 .grid-item{
-  width: 60%;
+  width: 360px;
   border:2px solid white;
   border-radius: 20px;
   margin:30px auto;
@@ -105,10 +105,16 @@ footer{
 }
 
 .least {
-  width: 50%;
   border:2px solid white;
   border-radius: 20px;
   background-color: #434343;
+  width: 400px;
+}
+
+
+
+.require li{
+  list-style-type: square
 }
 
 
