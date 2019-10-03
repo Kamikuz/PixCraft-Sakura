@@ -52,7 +52,7 @@
 
 从☕️[Java官网][java]下载
 
-目前Java所需版本为`64-bit 1.8.x`
+目前Java所需版本为`64-bit jre1.8.0_211`
 
 !> ⚠️目前客户端只支持 64为Java程序。下载时请选择`Windows Offline (64-bit)`版本！⚠️
 
