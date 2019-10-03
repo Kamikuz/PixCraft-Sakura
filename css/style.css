@@ -89,24 +89,28 @@ footer{
 
 /*class areas*/
 .grid-container1 {
-  display: inline-grid;
-  grid-template-columns: auto;
-  padding: 20px;
-  grid-gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  grid-gap: 20px;
+  grid-auto-flow: row;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .grid-container2 {
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
-  padding: 20px;
-  grid-gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 33.33%);
+  grid-template-rows: repeat(auto-fill, 33.33%);
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .grid-item{
-  width: 360px;
+  width:90%;
   border:2px solid white;
   border-radius: 20px;
-  margin:30px auto;
+  margin: 10px 0;
   background-color: #434343;
 }
 
@@ -114,7 +118,7 @@ footer{
   border:2px solid white;
   border-radius: 20px;
   background-color: #434343;
-  width: 400px;
+  width:90%;
 }
 
 .require li{
