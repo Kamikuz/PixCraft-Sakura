@@ -130,6 +130,8 @@ footer{
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 25pt;
+  width:100%;
+  text-align:center;
 }
 
 .download {
