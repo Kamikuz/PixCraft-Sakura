@@ -87,11 +87,17 @@ footer{
   text-align: center;
 }
 
-
 /*class areas*/
-.grid-container {
+.grid-container1 {
   display: inline-grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
+  padding: 20px;
+  grid-gap: 50px;
+}
+
+.grid-container2 {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
   padding: 20px;
   grid-gap: 50px;
 }
@@ -110,8 +116,6 @@ footer{
   background-color: #434343;
   width: 400px;
 }
-
-
 
 .require li{
   list-style-type: square
