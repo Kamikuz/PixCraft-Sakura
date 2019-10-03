@@ -65,6 +65,7 @@ img {
   display: block;
   border-radius: 20px 20px 0 0;
   margin: auto;
+  opacity: 0.4;
   
 }
 
@@ -77,16 +78,10 @@ li{
 }
 
 span{
-  
+  color: #D0104C;
 }
 
-section{
-  width: 30%;
-  border:2px solid white;
-  border-radius: 20px;
-  margin:30px auto;
-  background-color: var(--bg-color);
-}
+div
 
 footer{
   text-align: center;
@@ -94,16 +89,39 @@ footer{
 
 
 /*class areas*/
-.least{
-  
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+  grid-gap: 50px;
 }
 
-.history{
-
+.grid-item{
+  width: 60%;
+  border:2px solid white;
+  border-radius: 20px;
+  margin:30px auto;
+  background-color: #434343;
 }
 
-.cover{
+.least {
+  width: 50%;
+  border:2px solid white;
+  border-radius: 20px;
+  background-color: #434343;
+}
 
+
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25pt;
 }
 
 .download {
