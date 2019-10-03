@@ -141,7 +141,8 @@ footer{
   display: block;
   margin: 10px auto;
   height: 40px;
-  width: 50%;
+  width: 150px;
+
 }
 
 .update{
@@ -152,6 +153,7 @@ footer{
   margin: 10px auto;
   height: 40px;
   width: 50%;
+    width: 150px;s
 }
 
 .download:hover {
