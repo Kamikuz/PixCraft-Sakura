@@ -116,6 +116,10 @@ footer{
   place-self: center center;
 }
 
+.least h4{
+  padding-left: 10px;
+}
+
 .require li{
   list-style-type: square
 }
