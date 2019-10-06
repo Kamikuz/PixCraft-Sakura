@@ -63,7 +63,7 @@ Step 2：启动器打开后会出现以下窗口：
 
 ![登录页面](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/client/login.png ':size=300')
 
-！>请直接填写`用户名`和`密码` (没有注册的旁边有`注册`按钮) 完成后就会显示与官网个人中心相同的皮肤人物。
+!>请直接填写`用户名`和`密码` (没有注册的旁边有`注册`按钮) 完成后就会显示与官网个人中心相同的皮肤人物。
 
 Step 3: 点击右下角的`启动游戏`
 
