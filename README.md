@@ -13,16 +13,17 @@
 [server-creative]: /welcome/servers.md#creative
 [faq]: /welcome/faq.md
 [servers]: /welcome/servers.md
+[client]: /welcome/client.md
 
 # 亚特兰斯物语·和 :id=get-started
 
->アトラス物語‐「と」| Atorasumonogatari-to
+>アトラス物語‐「と」| Atorasumonogatari-to | 亚特兰斯物语·和
 
 ?> 本网站旨在为所有玩家提供一个简洁明了、能够快速上手的指南。
 
 本网站并不是针对 Minecraft 游戏本身的知识库，它主要介绍「亚特兰斯物语 Minecraft 服务器」的特色内容。如果你想了解游戏本身的内容与玩法，请访问：🔗[Minecraft 官方百科][mcwiki]。如果是刚接触这款游戏，可以参考：🍰[菜鸟手册][beginner-guide]。
 
-📖[常见问题][faq] | 🎮[服务器列表][servers] | 🐧[QQ交流群][qqgroup] | 🌍[卫星地图][dynmap] | 🏠[微软Teams团队][teams]
+📖[常见问题][faq] | ☁️[下载页面][downloadpage] | 🎮[服务器列表][servers] | 🐧[加入QQ交流群][qqgroup] | 🌍[实时地图][dynmap] | 🏠[加入微软Teams团队][teams]
 
 ## 服务器信息 :id=server-info
 
@@ -48,6 +49,8 @@
 
 在[亚特兰斯物语·和 官网][skin]注册游戏账号
 
+!>目前服务器处于`Alpha`测试阶段，所以账号的注册需要进行申请，请进入[QQ群][qqgroup]找管理员进行索要！
+
 ### 2 更新&安装 Java
 
 从☕️[Java官网][java]下载
@@ -57,34 +60,9 @@
 !> ⚠️目前客户端只支持 64为Java程序。下载时请选择`Windows Offline (64-bit)`版本！⚠️
 
 
-### 3 下载客户端
+### 3 下载&配置客户端
 
-> 📌请使用下面的专用启动器。否则进服时会提示“登录无效：账户验证失败”📌
-
-☁️[Teams团队里面](https://litestudio927.sharepoint.com/sites/LiteStudio/Shared%20Documents/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF-%E9%93%81%E8%B7%AF/%E5%AE%A2%E6%88%B7%E7%AB%AF/%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C%20Alpha3.1.zip)版本:`3.1`
-
-☁️[下载页面][downloadpage]版本: `3.1`
-
-!> 请优先点击`更新程序.exe`来检查客户端的更新！
-
-> Windows 用户，请直接打开`HMCL-3.x.x.exe`  
-
-你应该会看到如下提示：
-
-![启动器账户验证](assets/images/launcher-login.png ':size=400')
-
-> ❗️请不要修改`登录方式`以及`认证服务器`，这会导致你无法登录游戏❗️  
-> 请在`用户名`和`密码`处填上你刚刚在[亚特兰斯物语·和 官网][skin]注册的账号，然后点击`确定`即可登录。
-
-点击`确定`后，如果账户验证成功，你应该能在`账户`一栏看到你的游戏角色。如下：
-
-![启动器设置](assets/images/launcher-settings.jpg ':size=400')  
-> 启动游戏！
-
-🙋进入服务器后，先和大家打个招呼吧！
-
-?> 新玩家背包自带`快捷菜单(钟)`。<kbd>鼠标右键</kbd> 使用它，里面有你需要的大部分功能/指令！  
-快捷菜单丢了？没关系🍻除了鼠标右键钟来打开它，你还可以直接使用指令`/menu`。
+[》》》点击我前往客户端教程《《《][client]
 
 ### 最后
 
