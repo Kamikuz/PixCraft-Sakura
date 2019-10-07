@@ -14,6 +14,7 @@
 [faq]: /welcome/faq.md
 [servers]: /welcome/servers.md
 [client]: /welcome/client.md
+[cocricot]: /coricot
 
 # 亚特兰斯物语·和 :id=get-started
 
@@ -49,7 +50,7 @@
 
 在[亚特兰斯物语·和 官网][skin]注册游戏账号
 
-!>目前服务器处于`Alpha`测试阶段，所以账号的注册需要进行申请，请进入[QQ群][qqgroup]找管理员进行索要！
+!>目前服务器处于`Beta`测试阶段，所以账号的注册需要进行申请，请进入[QQ群][qqgroup]找管理员进行索要！
 
 ### 2 更新&安装 Java
 
