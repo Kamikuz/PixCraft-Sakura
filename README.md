@@ -29,7 +29,7 @@
 ## 服务器信息 :id=server-info
 
 服务器地址：
-- 主服务器`play.kamikuz.cn`
+- 主服务器`play.kamikuz.cn`*主服务器与下面两个数据相互独立！*
 - 备用服务器-多线`me.fiamc.top:39126`
 - 备用服务器-网通|联通`wtx.huafia.win:39126`
 
