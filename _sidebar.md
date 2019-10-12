@@ -21,9 +21,10 @@
   * [Cocrico材质包](https://wiki.kamikuz.cn/cocricot/)
 
 ----
+* 🌐 链接
 
-[亚特兰斯物语 聊咖](https://blog.kamikuz.cn/)
-[亚特兰斯物语·和 皮肤站](https://mc.kamikuz.cn/)
+  * [亚特兰斯物语 聊咖](https://blog.kamikuz.cn/)
+  * [亚特兰斯物语·和 皮肤站](https://mc.kamikuz.cn/)
 
 ----
 
