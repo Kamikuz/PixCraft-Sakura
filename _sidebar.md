@@ -13,9 +13,20 @@
 
 
 * 📖 插件帮助
-  
+
   * [创世神](plugins/worldedit.md)
+
+* 📖 教程
+
+  * [Cocrico材质包](https://wiki.kamikuz.cn/cocricot/)
+
+----
+
+[亚特兰斯物语 聊咖](https://blog.kamikuz.cn/)
+[亚特兰斯物语·和 皮肤站](https://mc.kamikuz.cn/)
 
 ----
 
 * [👮 管理](staff.md)
+* [💰 捐助](sponsor.md)
+* [♨️ 贡献](contribution.md)
