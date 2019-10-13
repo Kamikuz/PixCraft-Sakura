@@ -25,7 +25,10 @@
 
 ### 拥有权限
 
-?> 权限列表按照 *服务端插件* 来介绍。
+>玩家可以自由的参观整个亚特兰斯物语的风光，但是无法进行建造。
+
+- 飞行`/fly`
+- 聊天
 
 ----
 
@@ -34,6 +37,10 @@
 ![1级证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/B1.png)
 
 ### 获得条件
+
+- `参观|摄影`组的所有权限
+- 主世界的建造权限
+- 更改游戏模式`/gm`
 
 ### 拥有权限
 
@@ -95,4 +102,3 @@
 ----
 
 ## 优先级·Priority :id=priority
-
