@@ -196,7 +196,7 @@ footer{
 }
 
 .notice {
-  width: 450px;
+  width: 500px;
   height: 100px;
   border: 2px solid white;
   border-radius: 20px;
@@ -219,20 +219,24 @@ footer{
 .time {
   font-family: Kusunoki_Retsuban;
   color: white;
+  font-size: 15pt;
 }
 
 .event {
   font-family: Kusunoki_Mincho;
   color: red;
+  font-size: 15pt;
 }
 
 .class {
   font-family: Kusunoki_Gothic;
   color: lightcoral;
+  font-size: 15pt;
 }
 
 .status {
   font-family: Kusunoki_Mincho;
   color: darkgreen;
+  font-size: 15pt;
   
 }
