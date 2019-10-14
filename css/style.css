@@ -5,6 +5,26 @@
   --bg-img: url(../assets/images/bg.png)
 }
 
+@font-face {
+  font-family: 'Kusunoki Extra';
+  src: url('..assets/fonts/Kusunoki_Extra.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kusunoki Gothic';
+  src: url('..assets/fonts/Kusunoki_Gothic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kusunoki Mincho';
+  src: url('..assets/fonts/Kusunoki_Mincho.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kusunoki Retsuban';
+  src: url('..assets/fonts/Kusunoki_Retsuban.ttf') format('truetype');
+}
+
 * {
 	transition-duration: 0.5s;
 }
@@ -184,10 +204,10 @@ footer{
   margin: auto;
 }
 
-.notice h2, .event, .time, .class {
+.notice h2, .event, .time, .class, .status {
   display: inline-block;
   margin: auto;
-  padding: 10px 15px;
+  padding: 10px 10px;
 }
 
 .notice h2{
@@ -197,17 +217,22 @@ footer{
 }
 
 .time {
-  
+  font-family: Kusunoki Mincho;
+  color: white;
 }
 
 .event {
-  
+  font-family: Kusunoki Mincho;
+  color: red;
 }
 
 .class {
-  
+  font-family: Kusunoki Mincho;
+  color: lightcoral;
 }
 
 .status {
+  font-family: Kusunoki Mincho;
+  color: darkgreen;
   
 }
