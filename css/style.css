@@ -174,3 +174,24 @@ footer{
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.notice {
+  width: 400px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: black;
+  margin: auto;
+}
+
+.notice h2, .event, .time, .class {
+  display: inline-block;
+  margin: auto;
+  padding: 10px 15px;
+}
+
+.notice h2{
+  color: white;
+  padding: 0;
+  border-bottom: 2px solid;
+}
