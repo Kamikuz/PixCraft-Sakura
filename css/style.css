@@ -138,11 +138,15 @@ footer{
   border-radius: 20px;
   background-color: #434343;
   width:90%;
-  place-self: center center;
 }
 
 .least h4{
   padding-left: 10px;
+}
+
+.least a{
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .require li{
