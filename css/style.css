@@ -113,7 +113,6 @@ footer{
 .grid-container1 {
   display: grid;
   grid-template-columns: repeat(3, 33.3%);
-  margin: 10px auto;
   align-items: stretch;
   
 }
@@ -121,10 +120,7 @@ footer{
 .grid-container2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, 33.33%);
-  grid-template-rows: repeat(auto-fill, 33.33%);
-  justify-content: space-between;
-  align-content: space-between;
-  margin: 10px auto;
+  justify-content: stretch;
   align-items: stretch;
 }
 
@@ -134,7 +130,7 @@ footer{
   border-radius: 20px;
   margin: 10px 0;
   background-color: #434343;
-  place-self: center center;
+
 }
 
 .least {
@@ -196,7 +192,7 @@ footer{
 }
 
 .notice {
-  width: 500px;
+  width: 450px;
   height: 100px;
   border: 2px solid white;
   border-radius: 20px;
@@ -219,24 +215,20 @@ footer{
 .time {
   font-family: Kusunoki_Retsuban;
   color: white;
-  font-size: 15pt;
 }
 
 .event {
   font-family: Kusunoki_Mincho;
   color: red;
-  font-size: 15pt;
 }
 
 .class {
   font-family: Kusunoki_Gothic;
   color: lightcoral;
-  font-size: 15pt;
 }
 
 .status {
   font-family: Kusunoki_Mincho;
   color: darkgreen;
-  font-size: 15pt;
   
 }
