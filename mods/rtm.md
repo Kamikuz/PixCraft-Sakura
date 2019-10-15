@@ -1,4 +1,4 @@
-# RTM <small>Real Train Mod(真实火车))</small> :id=RTM
+# RTM <small>Real Train Mod(真实火车))</small> :id=rtm
 
 !> 该插件仅限[RTM工程师 | 红石工程师](/welcome/groups.md)（或更高级权限组）在[World](/welcome/servers.md)世界里使用。
 
@@ -69,5 +69,3 @@ OP以及拥有`RTM工程师`指令
 
 
 #### 信号(进阶)
-
-
