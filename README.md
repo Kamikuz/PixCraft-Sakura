@@ -2,7 +2,7 @@
 [dynmap]: http://map.kamikuz.cn:8123
 [qqgroup]: https://jq.qq.com/?_wv=1027&k=576OUne
 [downloadpage]: https://wiki.kamikuz.cn/download.html
-[teams]: https://teams.microsoft.com/l/channel/19%3aad996bf09baf4f9b830461f85539ecfc%40thread.skype/%25E4%25BA%259A%25E7%2589%25B9%25E5%2585%25B0%25E6%2596%25AF%25E7%2589%25A9%25E8%25AF%25AD%25C2%25B7%25E5%2592%258C?groupId=c15b399b-3daa-40f5-90fe-bcd4f8919cc2&tenantId=9507e1f2-06f8-485d-8f58-9b7859f6a87d
+[blog]: https://blog.kamikuz.cn
 [mcwiki]: https://minecraft-zh.gamepedia.com/
 [beginner-guide]: http://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E8%8F%9C%E9%B8%9F%E6%89%8B%E5%86%8C
 [skin]: https://mc.kamikuz.cn/
@@ -12,7 +12,7 @@
 [server-survival]: /welcome/servers.md#survival
 [server-creative]: /welcome/servers.md#creative
 [faq]: /welcome/faq.md
-[servers]: /welcome/servers.md
+[issues]: https://github.com/Kamikuz/Atorasumonogatarito/issues
 [client]: /welcome/client.md
 [cocricot]: /coricot
 
@@ -24,14 +24,16 @@
 
 本网站并不是针对 Minecraft 游戏本身的知识库，它主要介绍「亚特兰斯物语 Minecraft 服务器」的特色内容。如果你想了解游戏本身的内容与玩法，请访问：🔗[Minecraft 官方百科][mcwiki]。如果是刚接触这款游戏，可以参考：🍰[菜鸟手册][beginner-guide]。
 
-📖[常见问题][faq] | ☁️[下载页面][downloadpage] | 🎮[服务器列表][servers] | 🐧[加入QQ交流群][qqgroup] | 🌍[实时地图][dynmap] | 🏠[加入微软Teams团队][teams]
+----
+
+📖[常见问题][faq] | ☁️[下载页面][downloadpage] | 🎮[问题反馈][issues] | 🐧[加入QQ交流群][qqgroup] | ~~🌍[实时地图][dynmap]~~ | 🏠[亚特兰斯物语 聊咖][blog]
+
+----
 
 ## 服务器信息 :id=server-info
 
 服务器地址：
-- 主服务器`play.kamikuz.cn`*主服务器与下面两个数据相互独立！*
-- 备用服务器-多线`me.fiamc.top:39126`
-- 备用服务器-网通|联通`wtx.huafia.win:39126`
+- 主服务器`play.kamikuz.cn`
 
 服务器版本：`1.7.10` *城市建造*
 
@@ -44,8 +46,6 @@
 最大承载量：`100`
 
 白名单：`无`
-
-![服务器状态](http://tietu.zuimc.com/server.php?hostname=%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C&host=play.kamikuz.cn&motd=%E6%97%A5%E7%B3%BB%E5%A4%A7%E5%9E%8B%E5%9F%8E%E5%B8%82%E6%A8%A1%E6%8B%9F&line=3&srv=1)
 
 ## 加入游戏 :id=join-us
 
@@ -77,8 +77,8 @@
 ### 最后
 
 - 新玩家默认为[参观&摄影][group-def]权限组。
-- 有任何疑问欢迎咨询[QQ群][qqgroup]管理员或到🍵[Teams][teams]反馈。
-- 服务器的最新动态、改动都会在Teama第一时间发布。
+- 有任何疑问欢迎咨询[QQ群][qqgroup]向管理员反馈。
+- 服务器的最新动态、改动都会在去群内与[下载页](https://wiki.kamikuz.cn/download.html)的`服务器案内`板块第一时间发布！
 - 最后祝您游戏愉快～ヾ(◍°∇°◍)ﾉﾞ🎉🎊🎉🎊
 
 ----
