@@ -1,7 +1,6 @@
 [download1]: https://wiki.kamikuz.cn/download.html
 [download2]: https://jq.qq.com/?_wv=1027&k=5EBo7mu
 [error]: https://github.com/Kamikuz/Atorasumonogatarito/issues
-[error1]: /error.md#1
 [faq]: /welcome/faq.md
 
 ## 🕹️客户端入门 :id=client
@@ -9,6 +8,8 @@
 !> 目前由于客户端`Beta`版测试阶段，大部分基础问题bug已得到修复，但是还有其他bug，尚在修复中...
 
 ### 🖥️配置要求
+
+> MAC版本已测试可以在2017款13寸Macbook Pro(Touch Bar)版本上流程运行**不加**光影的高配版！
 
 #### 低配置
 
@@ -59,13 +60,13 @@ CUP：`i5-八代以上`
 - `bg` 启动器背景文件夹
 - `Nmmu.dat` 更新程序文件，⚠️请勿修改或者删除！⚠️
 
-![文件目录](assets/images/client/files.png':size=400')
+![文件目录](../assets/images/client/files.png ':size=400')
 
 Step 1：启动`更新程序.exe`以确保客户端处于最新版本。更新完后会显示`启动游戏`
 
 Step 2：启动器打开后会出现以下窗口：
 
-![登录页面](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/client/login.png ':size=300')
+![登录页面](../assets/images/client/login.png ':size=300')
 
 !>请直接填写`用户名`和`密码` (没有注册的旁边有`注册`按钮) 完成后就会显示与官网个人中心相同的皮肤人物。
 
