@@ -30,7 +30,7 @@
 
 ### 〇这是什么小窗口？
 
-![rtm](assets/images/client/rtm.png)
+![rtm](../assets/images/client/rtm.png)
 
 每次启动，你会发现有这个小窗口出现，这是由于亚特兰斯采用了[RTM](mods/rtm.md)模组，而这个模组在加载时需要自带的加载器来加载mods文件里面的追加包，因此加载时间比较长。
 
@@ -49,7 +49,7 @@
 
 ### ②客户端左上角的烦人文字
 
-![ngt](assets/images/client/ngt.png)
+![ngt](../assets/images/client/ngt.png)
 
 看到这个不断闪烁的文字，相信大家一定受不了。这个是由于客户端所安装的NGTlib模组所需要的验证步骤，它需要用户输入作者的激活码以进行消除。具体步骤[>>>点击我前往<<<](mods/rtm.md#verfity)
 
