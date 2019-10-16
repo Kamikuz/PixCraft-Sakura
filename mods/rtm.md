@@ -1,4 +1,4 @@
-# RTM <small>Real Train Mod(真实火车))</small> :id=rtm
+# RTM <small>Real Train Mod(真实火车))</small>
 
 !> 该插件仅限[RTM工程师 | 红石工程师](/welcome/groups.md)（或更高级权限组）在[World](/welcome/servers.md)世界里使用。
 
@@ -11,14 +11,15 @@
 ## 指令
 
 用户可用指令
+### 激活 :id=verfity
 
-!>(目前由于权限原因请玩家在单人模式下使用此命令激活！)
+!>服务器里可能会出现权限问题而无法激活，请在单机模式下激活后进入服务器！
 
 - `/ngt <激活码>` 用于消除左上角的“请输入激活码” [>>>点我前往原作者处获取激活码(科学**)<<<](https://dl.dropboxusercontent.com/s/7x1sc2jtcwe35ae/certificate.txt?dl=0&fbclid=IwAR0v1AtpMX-fEC_tQt0w8Muo6jbRUXjDgY0QKNiIkzj2UBwkxf_6eUzb4L8)
 
 >国内用户如果无法激活，可能需要`特殊网络`的。可以联系管理获取激活码！
 
-?>服务器里可能会出现权限问题而无法激活，请在单机模式下激活后进入服务器！
+### 其他指令
 
 - `/trec` 录制RTM列车驾驶脚本，用于后期的列车自动化运行
 
