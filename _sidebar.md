@@ -10,6 +10,7 @@
 * 📖 MOD帮助
   * [RTM模组](mods/rtm.md)
   * [红石计划](mods/projectred.md)
+  * [MCTE地形操作](mods/mcte.md)
 
 
 * 📖 插件帮助
