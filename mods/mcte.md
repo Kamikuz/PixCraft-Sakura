@@ -15,12 +15,12 @@
 
 该mod包含一下几个工具：
 
-- ![编辑器](../assets/images/mods/mcte/editor.png)
+- ![编辑器](../assets/images/mods/mcte/editor.png) 编辑器
 
-- ![生成器](../assets/images/mods/mcte/generator.png)
+- ![生成器](../assets/images/mods/mcte/generator.png) 生成器
 
-- ![迷你方块](../assets/images/mods/mcte/itemMiniature.png)
+- ![迷你方块](../assets/images/mods/mcte/itemMiniature.png) 迷你方块
 
-- ![刷子](../assets/images/mods/mcte/painter.png)
+- ![刷子](../assets/images/mods/mcte/painter.png) 刷子
 
 ## 开始
