@@ -14,7 +14,7 @@
 
 !>(目前由于权限原因请玩家在单人模式下使用此命令激活！)
 
-- `/ngt <激活码>` 用于消除左上角的“请输入激活码”
+- `/ngt <激活码>` 用于消除左上角的“请输入激活码” [>>>点我前往原作者处获取激活码(科学**)<<<](https://dl.dropboxusercontent.com/s/7x1sc2jtcwe35ae/certificate.txt?dl=0&fbclid=IwAR0v1AtpMX-fEC_tQt0w8Muo6jbRUXjDgY0QKNiIkzj2UBwkxf_6eUzb4L8)
 
 >国内用户如果无法激活，可能需要`特殊网络`的。可以联系管理获取激活码！
 
