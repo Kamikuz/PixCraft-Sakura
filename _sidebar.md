@@ -18,7 +18,7 @@
 
 * 📖 教程
 
-  * [cocrico建筑](https://wiki.kamikuz.cn/cocricot/)
+  * [cocrico建筑](tutorials/cocricot.md)
 
 ----
 * 🌐 链接
