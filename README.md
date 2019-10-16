@@ -47,6 +47,8 @@
 
 白名单：`无`
 
+![Server](http://tietu.zuimc.com/server.php?hostname=%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C&host=play.kamikuz.cn&motd=%E6%97%A5%E7%B3%BB%E5%A4%A7%E5%9E%8B%E5%9F%8E%E5%B8%82%E6%A8%A1%E6%8B%9F&line=3&srv=1)
+
 ## 加入游戏 :id=join-us
 
 ?> 加入我们的服务器很简单！你只需一个 *游戏账号* 和 *最新版本的客户端* (｀・ω・´)
