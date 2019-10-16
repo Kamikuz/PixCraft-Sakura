@@ -6,9 +6,13 @@
 目前该模组可以完成：
 
 1.编辑世界 *与WE一样*.
+
 2.迷你方块
+
 3.~~Export/import world data.~~
+
 4.~~Convert world data to .obj mutual.~~
+
 
 ## 材料
 
