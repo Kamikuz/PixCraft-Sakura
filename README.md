@@ -85,4 +85,4 @@
 
 ----
 
-<small>目前服务器采用的是兼容Bukkit与Forge的`Thermos`服务端，尚存在许多bug，目前正在改善服务器运营以及客户端的性能。</small>
+<small>目前服务器采用的是兼容Bukkit与Forge的并且优化过的`Uranium`服务端，目前仍然存在许多bug，目前正在改善服务器运营以及客户端的性能。</small>
