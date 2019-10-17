@@ -236,3 +236,13 @@ footer{
   color: darkgreen;
   
 }
+
+figure img{
+  max-width: 100%;
+  width: 10%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+  margin: auto;
+  opacity: 1;  
+}
+}
