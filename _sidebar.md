@@ -8,18 +8,20 @@
   * [权限组(职位)](welcome/groups.md)
 
 * 📖 MOD帮助
+
   * [RTM模组](mods/rtm.md)
   * [红石计划](mods/projectred.md)
   * [MCTE地形操作](mods/mcte.md)
 
-
 * 📖 插件帮助
 
   * [创世神](plugins/worldedit.md)
+  * [Vexview快捷菜单](plugins/vexview.md)
 
 * 📖 教程
 
-  * [cocrico建筑](tutorials/cocricot.md)
+  * [cocricot建筑](tutorials/cocricot.md)
+  * 铁路信号闭塞系统 *研发中*
 
 ----
 * 🌐 链接
