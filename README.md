@@ -33,7 +33,8 @@
 ## 服务器信息 :id=server-info
 
 服务器地址：
-- 主服务器`play.kamikuz.cn`
+
+主服务器`play.kamikuz.cn`
 
 服务器版本：`1.7.10` *城市建造*
 
