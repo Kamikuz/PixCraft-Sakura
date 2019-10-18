@@ -17,7 +17,7 @@
 
   * [创世神](plugins/worldedit.md)
   * [Vexview快捷菜单](plugins/vexview.md)
-  * [PlotSquared地皮插件](plugins/plotSquared.md)
+  * [PlotSquared地皮插件](plugins/plotsquared.md)
 
 * 📖 教程
 
