@@ -26,7 +26,7 @@
 
 ----
 
-📖[常见问题][faq] | ☁️[下载页面][downloadpage] | 🎮[问题反馈][issues] | 🐧[加入QQ交流群][qqgroup] | ~~🌍[实时地图][dynmap]~~ | 🏠[亚特兰斯物语 聊咖][blog]
+📖[常见问题][faq] | ☁️[下载页面][downloadpage] | 🎮[问题反馈][issues] | 🐧[加入QQ交流群][qqgroup] | ~~🌍实时地图~~ | 🏠[亚特兰斯物语 聊咖][blog]
 
 ----
 
