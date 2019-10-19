@@ -218,12 +218,17 @@ footer{
 
 .time {
   font-family: Kusunoki_Retsuban;
+  animation-name: SS;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   color: white;
 }
 
 .event {
   font-family: Kusunoki_Mincho;
-  color: red;
+  animation-name: SS;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .class {
@@ -233,8 +238,11 @@ footer{
 
 .status {
   font-family: Kusunoki_Mincho;
-  color: darkgreen;
-  
+  text-decoration: beige;
+  color: red;
+  animation-name: SS;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 figure img{
@@ -245,4 +253,9 @@ figure img{
   margin: auto;
   opacity: 1;  
 }
+
+@keyframes SS {
+  0%   {}
+  50%  {color: black;}
+  100% {}
 }
