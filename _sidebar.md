@@ -12,12 +12,16 @@
   * [RTM模组](mods/rtm.md)
   * [红石计划](mods/projectred.md)
   * [MCTE地形操作](mods/mcte.md)
+  * SinPicture牌子图片
 
 * 📖 插件帮助
 
   * [创世神](plugins/worldedit.md)
   * [Vexview快捷菜单](plugins/vexview.md)
   * [PlotSquared地皮插件](plugins/plotsquared.md)
+  * WorldGuard
+  * Essentials
+
 
 * 📖 教程
 
