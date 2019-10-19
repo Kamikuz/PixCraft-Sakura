@@ -31,7 +31,7 @@ PlotSquared (又名 plot2)是一款功能强大并且可高度自定义配置的
 
 >Flag(属性)是用来配置玩家地皮区域的所有属性参数，玩家可以通过这些参数来自定义您的地皮！
 
-- `titles`地皮名
+- `titles`地皮名  
 - `greeting`欢迎语
 - `farewell`欢送语
 - `feed`食用、喂养
