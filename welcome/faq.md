@@ -7,8 +7,10 @@
 ## 怎么联系管理组 :id=how-to-contact
 
 - 游戏内部：
+  - 按住<kbd>方向键↑</kbd>进入快捷菜单，点击`op救助`
 
 - 群内：
+  - @群管理即可，或者私信
 
 
 
@@ -16,7 +18,13 @@
 
 我们采用Github平台的[issues（问题反馈模块）](https://github.com/Kamikuz/Atorasumonogatarito/issues)来提供问题反馈，以下是流程：
 
->
+?>您可以参考这个例子来反馈[例子](https://github.com/Kamikuz/Atorasumonogatarito/issues/2)
+
+1. 截图或者保留错误日志
+2. 进入[issues（问题反馈模块）](https://github.com/Kamikuz/Atorasumonogatarito/issues)点击`New issue`开始发布。
+  - ![Step 2](../assets/images/errors/step2.png)
+3. 按照下面例图或者上面的[例子](https://github.com/Kamikuz/Atorasumonogatarito/issues/2)填写信息并附加图片或者日志。完成！
+  - ![Step 3](../assets/images/errors/step3.png)
 
 ## 服务器的更新策略 :id=update-policy
 
@@ -55,9 +63,13 @@
 
 ### ③我怎么这么难？啥都干不了？
 
+刚加入的玩家我们为了防止主世界的破坏限制了权限。萌新玩家可以输入`/plot auto`来获取自己的一块建造区域或者参观我们的城市。如果您的建筑或者其他有优秀突出的地方，我们会做出评估并给予相应的职位。
 
+[>>>点击我了解职位(获得权限，申请条件)<<<](welcome/groups.md)
 
 ### ④为什么这么卡？
+
+> 目前服务器搭载了RTM导致高配版加载光影是会出现帧率不稳定，预计在89fps-120fps。
 
 - 请检查自身的配置是否达到官网要求的配置
 - 服务器本身因为加载了RTM模组所以在有铁路的地方帧数为不稳定和掉帧现象出现，其他地方无影响。
@@ -65,11 +77,11 @@
 
 [>>>点击我前往问题反馈<<<](#issue)
 
-### ⑤那么好看的凳子？怎么做到的？
+### ⑤那么好看的材质？怎么做到的？
 
 这是因为我们引入了出色的cocricot材质包，其在原有方块的材质上使用CTM技术以实现一个方块呈现不同的材质。
 
-由于服务器版本为1.7.10，所以还是得依靠材质包与CTM技术来实现(1.12.0版本是用mod即可)
+由于服务器版本为1.7.10，所以还是得依靠材质包与CTM技术来实现。
 
 下载好的客户端已经配置好所有的设置，您只需进入游戏建造即可！
 
