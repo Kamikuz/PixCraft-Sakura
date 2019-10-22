@@ -6,3 +6,5 @@
 - `KAMIKU`
 - `Brun_Sky`
 - `Mouneilgosh`
+
+# 风纪委 管理指导

@@ -15,7 +15,7 @@
 
 ----
 
-## ❄️参观|摄影（默认） :id=def
+## ❄️参观|摄影（默认） :id=v
 
 > *“初来乍到的萌新们。”*
 
@@ -27,14 +27,15 @@
 
 >玩家可以自由的参观整个亚特兰斯物语的风光，但是无法进行建造。
 
-- 飞行`/fly`
-- 聊天
-- `Test`世界&创造模式 `/mv tp Test` & `/gm 1(0)` *仅限Test世界*
-- `demo`世界限制级建造 *需向管理员获取区域以及权限*
+- 飞行`/fly` *essentials.fly*
+- 聊天 *essentials.chat*
+- `私人建筑世界`访问&创造模式 `/mv tp PA` & `/gm 1(0)` *mv.tp.PA* | *essentials.gm*
+- `PA(私人建筑世界)` ***1*** 个地皮拥有权 `/plot calim`或者`/plot auto`任意一个`1`次 *plot.claim.1* | *plot.auto.1* | *plot.visit*
+- `模板`世界限制级建造 (**需向管理员获取区域以及权限**) *mv.tp.demo* | *essentials.gm*
 
 ----
 
-## 👨‍🏭1级建筑师·Builder Lv.1 :id=adv
+## 👨‍🏭1级建筑师·Builder Lv.1 :id=b1
 
 ![1级证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/B1.png)
 
@@ -52,7 +53,7 @@
 
 ----
 
-## 👨‍🏭2级建筑师·Builder Lv.2 :id=crafter
+## 👨‍🏭2级建筑师·Builder Lv.2 :id=b2
 
 ![2级证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/B2.png)
 
@@ -64,7 +65,7 @@
 
 ----
 
-## 👷‍3级建筑师·Builder Lv.3 :id=arch
+## 👷‍3级建筑师·Builder Lv.3 :id=b3
 
 ![3级证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/B3.png)
 
@@ -73,7 +74,7 @@
 ### 拥有权限
 
 ----
-## 👨‍🎨红石工程师·RS Engine :id=rsengine
+## 👨‍🎨红石工程师·RS Engine :id=rs
 
 ![红石证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/rs.png)
 
@@ -83,7 +84,7 @@
 
 ----
 
-## 👨‍🎨RTM工程师·RTM Engine :id=rtmengine
+## 👨‍🎨RTM工程师·RTM Engine :id=rtm
 
 ![RTM证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/rtm.png)
 
@@ -106,6 +107,8 @@
 「最高执行官」属于服务器的决策层，主要负责技术开发和重大决策。
 
 ### 拥有权限
+
+- 所有权限
 
 ----
 
