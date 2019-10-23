@@ -1,4 +1,4 @@
-[cocricot]: /coricot
+[cocricot]: https://wiki.kamikuz.cn/cocricot/
 
 # cocrico建筑教程
 
