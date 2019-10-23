@@ -41,15 +41,18 @@
 
 ### 获得条件
 
-玩家可以在Test进行自我的作品发挥或者在demo世界
+- 玩家拥有基础的建筑水准，基本的建筑观念。
+- 尊重他人的成果
+
+?>玩家可以主动在服务器里互换风纪委和最高执行官进行作品评价。其他玩家也可以输入`/plot vote`来给予评价。
 
 
 ### 拥有权限
 
 - `参观|摄影`组的所有权限
-- `Test`,`demo`世界&创造模式 `/mv tp Test(demo)` & `/gm 1(0)`
-- `demo`世界自由建造
-- `主世界`限制级建造 *需向管理员获取区域以及权限*
+- `demo`世界&创造模式 `/mv tp Test(demo)` & `/gm 1(0)` *mv.tp.demo* | *mv.access.demo* | *essentials.gm*
+- `模板`世界限制级建造(**需向管理员获取区域以及权限**) *Build.demo*
+- `主世界`参观 *mv.tp.world* | *mv.access.world*
 
 ----
 
@@ -58,6 +61,11 @@
 ![2级证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/B2.png)
 
 ### 获得条件
+
+-
+-
+-
+-
 
 ### 拥有权限
 
@@ -70,6 +78,11 @@
 ![3级证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/B3.png)
 
 ### 获得条件
+
+- `佐和祭`上获得`优秀建筑师`称号 或者 私人建筑世界里拥有独特的建筑风格(官方品赏)
+- 拥有优秀的建筑规划和逻辑
+- 遵循规则，友善待人
+- 熟练的掌握各种建筑工具，材质的运用(cocricot)
 
 ### 拥有权限
 
