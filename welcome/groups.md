@@ -29,7 +29,7 @@
 
 - 飞行`/fly` *essentials.fly*
 - 聊天 *essentials.chat*
-- `私人建筑世界`访问&创造模式 `/mv tp PA` & `/gm 1(0)` *mv.tp.PA* | *essentials.gm*
+- `私人建筑世界`访问&创造模式 `/mv tp PA` & `/gm 1(0)` *mv.tp.PA* | *mv.access.PA* | *essentials.gm*
 - `PA(私人建筑世界)` ***1*** 个地皮拥有权 `/plot calim`或者`/plot auto`任意一个`1`次 *plot.claim.1* | *plot.auto.1* | *plot.visit*
 - `模板`世界限制级建造 (**需向管理员获取区域以及权限**) *mv.tp.demo* | *essentials.gm*
 
