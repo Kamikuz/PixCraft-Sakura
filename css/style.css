@@ -112,7 +112,7 @@ footer{
 /*class areas*/
 .grid-container1 {
   display: grid;
-  grid-template-columns: repeat(3, 33.3%);
+  grid-template-columns: repeat(4, 25%);
   align-items: stretch;
 
 }
