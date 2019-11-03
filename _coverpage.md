@@ -1,4 +1,4 @@
-# アトラス物語‐「と」| 亚特兰斯物语·和<small>Minecraft 1.7.10</small> :id=cover
+# アトラス物語‐「と」| 亚特兰斯物语·和<small>Minecraft 1.7.10|Minecraft 1.12.2</small> :id=cover
 
 - 日系，电车
 - 各种二次元圣地搭建
