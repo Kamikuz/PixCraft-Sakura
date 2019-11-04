@@ -2,6 +2,9 @@
 [qqgroup]: https://jq.qq.com/?_wv=1027&k=576OUne
 [error]: https://github.com/Kamikuz/Atorasumonogatarito/issues
 [faq]: /welcome/faq.md
+[skin]: https://mc.kamikuz.cn/
+[faq]: /welcome/faq.md
+[issues]: https://github.com/Kamikuz/Atorasumonogatarito/issues
 
 # 亚特兰斯物语·樱
 
@@ -19,7 +22,7 @@
 
 网络配置：`国内|海外`
 
-正版验证：`开启` *支持正版用户登录*
+正版验证：`关闭`
 
 第三方外置登录：`开启` *使用亚特兰斯官方皮肤站账号登录*
 
@@ -67,8 +70,8 @@ CUP：`基础的Minecraft能跑就可以了`
 
 ### 下载
 
-- [☁️下载页][download1]   版本号 `3.0`
+- [☁️下载页][download1]   版本号 `4.0`
 
-?> 如果你遇到了其他问题，可以在[错误反馈][error]和[疑问解答][faq]板块寻找解决方案！
+?> 如果你遇到了其他问题，可以在[错误反馈][issues]和[疑问解答][faq]板块寻找解决方案！
 
 !> 我们不接受一遇到问题就不耐烦的说我们没有做好，请认真阅读所有指导再询问，谢谢配合！
