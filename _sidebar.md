@@ -11,6 +11,7 @@
 
   * [RTM模组](mods/rtm.md)
   * [红石计划](mods/projectred.md)
+  * [摄影MOD](mods/cmdcam.md)
   * SignPicture牌子图片
 
 * 📖 插件帮助

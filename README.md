@@ -16,7 +16,6 @@
 [client]: /welcome/client.md
 [test]: /test.md
 
-
 # 亚特兰斯物语·和 :id=get-started
 
 >アトラス物語‐「と」| Atorasumonogatari-to | 亚特兰斯物语·和
@@ -89,4 +88,6 @@
 
 ----
 
-<small>目前服务器采用的是兼容Bukkit与Forge的并且优化过的`Uranium`服务端，目前仍然存在许多bug，目前正在改善服务器运营以及客户端的性能。</small>
+<small>目前 `和` 服务器采用的是兼容Bukkit与Forge的并且优化过的`Uranium`服务端，目前仍然存在许多bug，目前正在改善服务器运营以及客户端的性能。</small>
+
+<small>目前 `樱` 服务器采用的是兼容Spigot与Forge的并且优化过的`Sponge`服务端，目前仍然存在许多bug，目前正在改善服务器运营以及客户端的性能。</small>
