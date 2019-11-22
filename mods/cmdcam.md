@@ -13,13 +13,21 @@
 按 <kbd>U</kbd> 开始动画 (默认为 **10** 秒)
 
 `/cam add [number]` register a point at the current position
+
 `/cam start <time|ms|s|m|h|d>` 使用设定的时间开始动画
+
 `/cam clear` 删除所有的关键帧
+
 `/cam goto <index>` 传送至所选关键帧
+
 `/cam set <index>` 更新所选关键帧至目前位置
+
 `/cam remove <index>` 删除所选关键帧
+
 `/cam target <none:self>` 设置摄像头目标 *如果你留空,右键点击一个实体或者方块以设置目标*
+
 `/cam mode <default:outside>` 设置动画模式
+
 `/cam interpolation <linear,cosine,cubic,hermite>` 设置动画移动参数 默认是`hermite`
 - linear 线性
 - cosine 余弦
@@ -33,4 +41,5 @@
 按 <kbd>G</kbd> 向左转, <kbd>J</kbd> 向右转 and <kbd>H</kbd> to 重置转动
 
 `/cam show <all:linear,cosine,cubic,hermite>` 显示所加参数的动画路径
+
 `/cam hide <all:linear,cosine,cubic,hermite>` 影藏所加参数的动画路径
