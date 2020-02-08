@@ -16,7 +16,7 @@
 [client]: /welcome/client.md
 [test]: /test.md
 
-# 亚特兰斯物语·和 :id=get-started
+# 亚特兰斯物语·樱 :id=get-started
 
 >アトラス物語‐「さくら」| Atorasumonogatari-Sakura | 亚特兰斯物语·樱
 
@@ -34,7 +34,7 @@
 
 服务器地址：
 
-主服务器`play.kamikuz.cn`
+主服务器`----`
 
 服务器版本：`1.12.2` *城市建造*
 
@@ -56,7 +56,7 @@
 
 ### 1 注册账号
 
-在[亚特兰斯物语·和 皮肤站][skin]注册游戏账号
+在[亚特兰斯物语·樱 皮肤站][skin]注册游戏账号
 
 !>目前服务器处于`Beta`测试阶段，所以账号的注册需要进行申请，请进入[QQ群][qqgroup]找管理员进行索要！
 
