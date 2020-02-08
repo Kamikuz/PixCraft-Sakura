@@ -2,7 +2,7 @@
 [dynmap]: http://map.kamikuz.cn:8123
 [qqgroup]: https://jq.qq.com/?_wv=1027&k=576OUne
 [downloadpage]: https://wiki.kamikuz.cn/download.html
-[blog]: https://blog.kamikuz.cn
+[blog]: https://bb.kamikuz.cn
 [mcwiki]: https://minecraft-zh.gamepedia.com/
 [beginner-guide]: http://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E8%8F%9C%E9%B8%9F%E6%89%8B%E5%86%8C
 [skin]: https://mc.kamikuz.cn/
@@ -18,15 +18,7 @@
 
 # 亚特兰斯物语·和 :id=get-started
 
-!>=============重要通知=============
-
-!>|本服务器将放弃1.7.10版本，采用1.12.2 | 
-
-!>|服务器于2020.1.15日重新开服         |
-
-!>=================================
-
->アトラス物語‐「と」| Atorasumonogatari-to | 亚特兰斯物语·和
+>アトラス物語‐「と」| Atorasumonogatari-Sakura | 亚特兰斯物语·樱
 
 ?> 本网站旨在为所有玩家提供一个简洁明了、能够快速上手的指南。
 
@@ -34,7 +26,7 @@
 
 ----
 
-📖[常见问题][faq] | ☁️[下载页面][downloadpage] | 🎮[问题反馈][issues] | 🐧[加入QQ交流群][qqgroup] | ~~🌍实时地图~~ | 🏠[亚特兰斯物语 聊咖][blog] | 🌸[测试服-樱][test] | 🆔[后台管理](http://kamiku.picp.vip) | 🆔[监控](http://kamiku.picp.vip:8080)
+📖[常见问题][faq] | ☁️[下载页面][downloadpage] | 🎮[问题反馈][issues] | 🐧[加入QQ交流群][qqgroup] | ~~🌍实时地图~~ | 🏠[亚特兰斯物语 聊咖][blog] | 🌸[测试服][test] | 🆔[后台管理](http://kamiku.picp.vip) | 🆔[监控](http://kamiku.picp.vip:8080)
 
 ----
 
