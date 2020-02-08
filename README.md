@@ -18,7 +18,7 @@
 
 # 亚特兰斯物语·和 :id=get-started
 
->アトラス物語‐「と」| Atorasumonogatari-Sakura | 亚特兰斯物语·樱
+>アトラス物語‐「さくら」| Atorasumonogatari-Sakura | 亚特兰斯物语·樱
 
 ?> 本网站旨在为所有玩家提供一个简洁明了、能够快速上手的指南。
 
@@ -36,7 +36,7 @@
 
 主服务器`play.kamikuz.cn`
 
-服务器版本：`1.7.10` *城市建造*
+服务器版本：`1.12.2` *城市建造*
 
 网络配置：`国内|海外`
 
@@ -49,8 +49,6 @@
 白名单：`无`
 
 ![Server](http://tietu.zuimc.com/server.php?hostname=%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E5%92%8C&host=play.kamikuz.cn&motd=%E6%97%A5%E7%B3%BB%E5%A4%A7%E5%9E%8B%E5%9F%8E%E5%B8%82%E6%A8%A1%E6%8B%9F&line=3&srv=1)
-
-![Server2](http://tietu.zuimc.com/server.php?hostname=%E4%BA%9A%E7%89%B9%E5%85%B0%E6%96%AF%E7%89%A9%E8%AF%AD%C2%B7%E6%A8%B1&host=play2.kamikuz.cn&motd=%E5%85%A8%E6%96%B0%E4%B8%96%E7%95%8C%E8%A7%82&line=6&srv=1)
 
 ## 加入游戏 :id=join-us
 
