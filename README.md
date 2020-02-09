@@ -34,7 +34,7 @@
 
 服务器地址：
 
-主服务器`server.kamikuz.cn:25565`
+主服务器`server.kamikuz.cn`
 
 服务器版本：`1.12.2` *城市建造*
 
