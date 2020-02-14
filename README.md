@@ -1,7 +1,7 @@
 [homepage]: https://kamikuz.cn/
 [dynmap]: http://map.kamikuz.cn:8123
 [qqgroup]: https://jq.qq.com/?_wv=1027&k=576OUne
-[downloadpage]: https://wiki.kamikuz.cn/download.html
+[downloadpage]: https://mc.kamikuz.cn/download.html
 [blog]: https://bb.kamikuz.cn
 [mcwiki]: https://minecraft-zh.gamepedia.com/
 [beginner-guide]: http://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E8%8F%9C%E9%B8%9F%E6%89%8B%E5%86%8C
