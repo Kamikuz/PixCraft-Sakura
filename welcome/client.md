@@ -43,7 +43,7 @@ CUP：`i5-八代以上`
 
 - [☁️下载页][download1]   版本号 `6.1`
 
-- [✨ Github下载][https://github.com/Kamikuz/Atorasumonogatari/releases] 版本号 `6.1`
+- [☁️Github下载](https://github.com/Kamikuz/Atorasumonogatari/releases) 版本号 `6.1`
 
 - [☁️QQ群内（群文件-->客户端）][download2]    版本号 `6.1`
 
