@@ -1,4 +1,4 @@
-[download1]: https://wiki.kamikuz.cn/download.html
+[download1]: https://mc.kamikuz.cn/download.html
 [download2]: https://jq.qq.com/?_wv=1027&k=5EBo7mu
 [error]: https://github.com/Kamikuz/Atorasumonogatarito/issues
 [faq]: /welcome/faq.md
@@ -41,9 +41,11 @@ CUP：`i5-八代以上`
 
 ### 下载
 
-- [☁️下载页][download1]   版本号 `2.0`
+- [☁️下载页][download1]   版本号 `6.1`
 
-- [☁️QQ群内（群文件-->客户端）][download2]    版本号 `2.0`
+- [✨ Github下载][https://github.com/Kamikuz/Atorasumonogatari/releases] 版本号 `6.1`
+
+- [☁️QQ群内（群文件-->客户端）][download2]    版本号 `6.1`
 
 ### Link Start！
 
