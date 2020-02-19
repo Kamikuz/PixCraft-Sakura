@@ -1,253 +1,153 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
-	<title>亚特兰斯物语·和 下载</title>
-	<meta charset="utf-8">
-	<meta title="description" content="Offical Site for Atorasumonogatari-to Minecraft Server.">
-	<meta title="author" content="KAMIKU">
-	<link rel="icon" href="assets/images/favicon.png">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import Vue.js -->
+    <script src="https://vuejs.org/js/vue.min.js"></script>
+    <!-- import stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/view-design/dist/styles/iview.css">
+    <!-- import iView -->
+    <script src="https://unpkg.com/view-design/dist/iview.min.js"></script>
+    <title>客户端下载</title>
 </head>
+<style>
+    @import url("//unpkg.com/iview/dist/styles/iview.css");
+    #app {
+        padding: 32px;
+        height: 1000px;
+    }
+    
+    .layout {
+        border: 1px solid #d7dde4;
+        background: #f5f7f9;
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    
+    .layout-logo {
+        width: 100px;
+        height: 30px;
+        background: #5b6270;
+        border-radius: 3px;
+        float: left;
+        position: relative;
+        top: 15px;
+        left: 20px;
+    }
+    
+    .layout-nav {
+        width: 420px;
+        margin: 0 auto;
+        margin-right: 20px;
+    }
+</style>
+
 <body>
-	<figure>
-		<img alt="LOGO" src="assets/images/banner.png">
-	</figure>
-	<div id="app">
-		<header>
-			<h1>客户端下载</h1>
-		</header>
+    <div id="main">
+        <div class="layout">
+            <layout>
 
-		<nav>
-			<ul>
-				<li><a href="https://mc.kamikuz.cn">官方皮肤站</a></li>
-				<li><a href="https://wiki.kamikuz.cn">亚特兰斯物语·和 官网</a></li>
-				<li><a href="http://kamiku.picp.vip:8123">亚特兰斯-地图</a></li>
-				<li><a href="https://play.mcmod.cn/sv20182663.html">MC百科官方宣传站</a></li>
-			</ul>
-		</nav>
+                <i-header>
+                    <i-menu mode="horizontal" theme="dark" active-name="1">
+                        <div class="layout-logo"></div>
+                        <div class="layout-nav">
+                            <menu-item name="1">
+                                <icon type="ios-navigate"></icon>
+                                官网
+                            </menu-item>
+                            <menu-item name="2">
+                                <icon type="ios-keypad"></icon>
+                                地图
+                            </menu-item>
+                            <menu-item name="3">
+                                <icon type="ios-analytics"></icon>
+                                讨论
+                            </menu-item>
+                            <menu-item name="4">
+                                <icon type="ios-paper"></icon>
+                                问题反馈
+                            </menu-item>
+                        </div>
+                    </i-menu>
+                </i-header>
 
-		<main>
-			<div class="notice">
-					<h2>服务器案内</h2>
-					<!--<p class="time">11/1</p>
-					<p class="event">服务器更新</p>
-					<p class="class">特急</p>
-					<p class="status">正点</p> -->
-			</div>
+                <layout>
+                    <sider hide-trigger :style="{background: '#fff'}">
+                        <i-menu active-name="1-2" theme="light" width="auto" :open-names="['1']">
+                            <submenu name="1">
+                                <template slot="title">
+                                    <icon type="ios-navigate"></icon>
+                                    服务器概览
+                                </template>
+                                <menu-item name="1-1" on-select="">服务器信息</menu-item>
+                                <menu-item name="1-2">服务器 更新记录</menu-item>
+                            </submenu>
+                            <submenu name="2">
+                                <template slot="title">
+                                    <icon type="ios-keypad"></icon>
+                                    客户端下载
+                                </template>
+                                <menu-item name="2-1">下载</menu-item>
+                            </submenu>
+                            <submenu name="3">
+                                <template slot="title">
+                                    <icon type="ios-analytics"></icon>
+                                    用户中心
+                                </template>
+                                <menu-item name="3-1">账号 | 角色</menu-item>
+                                <menu-item name="3-2">权限 | 经济</menu-item>
+                            </submenu>
+                        </i-menu>
+                    </sider>
 
-			<h2>最新版本</h2>
-			<div class="grid-container1">
-				<div class="least">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center">测试服<span>Beta</span>6.1</div>
-        	</div>
-					<ul>
-						<li><p>全新客户端</p></li>
-						<li><p>MC1.12.2版本</p></li>
-						<li><p>日系模组|食物|建筑</p></li>
-					</ul>
-					<a href="https://github.com/Kamikuz/Atorasumonogatari/releases/download/Beta6.1.0/Beta.6.1.zip">
-						<button class="download">抢先体验|Beta 6.1</button>
-					</a>
-				</div>
+                    <!---->
+                    <layout :style="{padding: '0 24px 24px'}">
+                        <!---->
+                        <breadcrumb :style="{margin: '24px 0'}">
+                            <breadcrumb-item>
+                                <i-Button type="text" ghost to="https://mc.kamikuz.cn">主页</i-Button>
+                            </breadcrumb-item>
+                            <breadcrumb-item>客户端下载</breadcrumb-item>
+                        </breadcrumb>
 
-				<div class="least">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center"><span>Beta</span> 2.0</div>
-        	</div>
-					<ul>
-						<li><p>增加牌子图片</p></li>
-						<li><p>增加安全和运输mod</p></li>
-						<li><p>添加若干RTM追加包</p></li>
-						<li><p>删除家居mod</p></li>
-						<li><p>删除杂余mod</p></li>
-						<li><p>正在解决服务器加载卡顿问题...(无解)</p></li>
-					</ul>
-					<a href="">
-						<button class="download" disabled>停止发布</button>
-					</a>
-				</div>
+                        <!---->
+                        <i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
+                            <tabs>
+                                <tab-pane label="Windows" icon="logo-windows">标签二的内容</tab-pane>
+                                <tab-pane label="macOS" icon="logo-apple">标签一的内容</tab-pane>
+                            </tabs>
+                        </i-content>
 
-				<div class="least">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center"><span>Beta</span> 2.0 Pro</div>
-        	</div>
-					<ul>
-						<li><p>基础版所有内容</p></li>
-						<li><p>优化客户端性能</p></li>
-					</ul>
-					<a href="">
-						<button class="download" disabled>停止发布</button>
-					</a>
-				</div>
+                        <!---->
+                        <i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
+                            <timeline>
+                                <timeline-item color="green">发布1.0版本</timeline-item>
+                                <timeline-item color="green">发布2.0版本</timeline-item>
+                                <timeline-item color="red">严重故障</timeline-item>
+                                <timeline-item color="blue">发布3.0版本</timeline-item>
+                            </timeline>
+                        </i-content>
+                    </layout>
 
-				<div class="least">
-					<h3>配置要求</h3>
-					<h4>低配版</h4>
-					<ul class="require">
-						<li>系统：64位Windows | Mac OS</li>
-						<li>内存：3G</li>
-						<li>空间：740MB</li>
-						<li>Java：64位 jre1.8.0_211及以上</li>
-					</ul>
+                </layout>
 
-					<h4>高配版</h4>
-					<ul class="require">
-						<li>系统：64位Windows | Mac OS</li>
-						<li>内存：4G</li>
-						<li>空间：740MB</li>
-						<li>CUP: i7八代左右</li>
-						<li>GUP：Geforce GTX 960</li>
-						<li>Java：64位 jre1.8.0_211及以上</li>
-					</ul>
-
-					<a href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=239858_230deb18db3e4014bb8e3e8324f81b43">
-						<button class="download">更新/安装 64位Java</button>
-					</a>
-				</div>
-		</div>
-
-			<h2>历史版本</h2>
-
-			<div class="grid-container2">
-				<div class="grid-item">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center"><span>Beta</span> 1.0</div>
-        	</div>
-					<ul>
-						<li><p>全新材质</p></li>
-						<li><p>增加高清优化</p></li>
-						<li><p>增强建筑mod</p></li>
-						<li><p>新增四季主题材质</p></li>
-						<li><p>正在解决服务器加载卡顿问题...(无解)</p></li>
-					</ul>
-				</div>
-
-				<div class="grid-item">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center"><span>Beta</span> 1.0 Pro</div>
-        	</div>
-					<ul>
-						<li><p>全新材质</p></li>
-						<li><p>增加高清优化</p></li>
-						<li><p>增强建筑mod</p></li>
-						<li><p>新增四季主题材质</p></li>
-						<li><p>正在解决服务器加载卡顿问题...(无解)</p></li>
-						<li><p>高配增加内容：</p>
-								<ol>
-									<li><p>增加视觉增强MOD</p></li>
-									<li><p>增加动态加载</p></li>
-									<li><p>增加动态声音</p></li>
-								</ol>
-						</li>
-					</ul>
-				</div>
-
-				<div class="grid-item">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center"><span>Alpha</span> 3.2</div>
-        	</div>
-					<ul>
-						<li><p>删减部分mod</p></li>
-						<li><p>优化客户端</p></li>
-						<li><p>增加高配|低配版本</p></li>
-						<li><p>正在解决服务器加载卡顿问题...(无解)</p></li>
-					</ul>
-				</div>
-
-				<div class="grid-item">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center"><span>Alpha</span> 3.2 Pro</div>
-        	</div>
-					<ul>
-						<li><p>删减部分mod</p></li>
-						<li><p>优化客户端</p></li>
-						<li><p>增加高配|低配版本</p></li>
-						<li><p>正在解决服务器加载卡顿问题...(无解)</p></li>
-						<li><p>高配增加内容：</p>
-								<ol>
-									<li><p>增加光影模组(不提供光影包)</p></li>
-									<li><p>增加视觉增强MOD</p></li>
-									<li><p>增加GUI辅助界面</p></li>
-									<li><p>使用高级启动参数</p></li>
-								</ol>
-						</li>
-				</div>
-
-				<div class="grid-item">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center"><span>Alpha</span> 3.1</div>
-					</div>
-					<ul>
-						<li><p>增加时装mod</p></li>
-						<li><p>优化客户端</p></li>
-						<li><p>新增若干玩意</p></li>
-						<li><p>忘了~</p></li>
-					</ul>
-				</div>
-				<div class="grid-item">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center"><span>Alpha</span> 3.0</div>
-        	</div>
-          <ul>
-						<li><p>修复游戏启动缓慢的问题</p></li>
-						<li><p>优化客户端进入服务器的卡顿问题</p></li>
-						<li><p>优化客户端大小！</p></li>
-						<li><p>全新的UI界面！</p></li>
-						<li><p>修复若干bug</p></li>
-						<li><p>忘了~</p></li>
-					</ul>
-				</div>
-
-				<div class="grid-item">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center"><span>Alpha</span> 2.1</div>
-					</div>
-					<ul>
-						<li><p>新增UI模组</p></li>
-						<li><p>追加RTM模组若干</p></li>
-						<li><p>修复RTM模组包闪退问题</p></li>
-					</ul>
-				</div>
-
-				<div class="grid-item">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center"><span>Alpha</span> 2.0</div>
-        	</div>
-					<ul>
-						<li><p>新增Road模组</p></li>
-						<li><p>新增全息建筑模组（内测中...）</p></li>
-						<li><p>追加 RTM模组</p></li>
-						<li><p>更新MOD设置</p></li>
-						<li><p>优化客户端性能</p></li>
-					</ul>
-				</div>
-
-				<div class="grid-item">
-					<div class="container">
-						<img src="assets/images/version.png">
-						<div class="center"><span>Alpha</span> 1.0</div>
-        	</div>
-					<ul>
-						<li><p>Alpha测发布啦！</p></li>
-					</ul>
-				</div>
-			</div>
-		</main>
-		<footer>
-			<p>© Copyrights アトラス物語‐「と」. All rights reserved.</p>
-		</footer>
-	</div>
+            </layout>
+        </div>
+    </div>
 </body>
+
+
+<script>
+    var data = {
+        currentMenu: 1,
+    }
+    var Main = new Vue({
+        el: '#main',
+        data: data
+    })
+</script>
+
 </html>
