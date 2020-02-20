@@ -74,50 +74,101 @@
 
                 <layout>
                     <sider hide-trigger :style="{background: '#fff'}">
-                        <i-menu active-name="1-1" theme="light" width="auto" :open-names="['1']" accordion >
+                        <i-menu active-name="1-1" theme="light" width="auto" :open-names="['1']" accordion @on-select="changePage">
                             <submenu name="1">
                                 <template slot="title">
                                     <icon type="ios-navigate"></icon>
                                     服务器概览
                                 </template>
-                                <menu-item name="1-1">服务器信息</menu-item>
-                                <menu-item name="1-2">服务器 更新记录</menu-item>
+                                <menu-item name="1.1">服务器信息</menu-item>
+                                <menu-item name="1.2">服务器 更新记录</menu-item>
                             </submenu>
                             <submenu name="2">
                                 <template slot="title">
                                     <icon type="ios-keypad"></icon>
                                     客户端下载
                                 </template>
-                                <menu-item name="2-1" :on-select="changePage(1)">下载</menu-item>
+                                <menu-item name="2.1">下载</menu-item>
                             </submenu>
                             <submenu name="3">
                                 <template slot="title">
                                     <icon type="ios-analytics"></icon>
                                     用户中心
                                 </template>
-                                <menu-item name="3-1">账号 | 角色</menu-item>
-                                <menu-item name="3-2">权限 | 经济</menu-item>
+                                <menu-item name="3.1">账号 | 角色</menu-item>
+                                <menu-item name="3.2">权限 | 经济</menu-item>
                             </submenu>
                         </i-menu>
                     </sider>
 
                     <!---->
-                    <layout :style="{padding: '0 24px 24px'}">
+                    <layout :style="{}">
 											<!---->
-											<i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}" v-if="currentMenu == 1 ">
+											<i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}" v-if="currentMenu == 1.1 ">
+												asdasda
+											</i-content>
+											
+											<!---->
+											<i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}" v-if="currentMenu == 1.2 ">
 													<timeline>
-															<timeline-item color="green">发布1.0版本</timeline-item>
+														<!--
+															<timeline-item color="green">发布3.0版本</timeline-item>
 															<timeline-item color="green">发布2.0版本</timeline-item>
-															<timeline-item color="red">严重故障</timeline-item>
-															<timeline-item color="blue">发布3.0版本</timeline-item>
+															<timeline-item color="red">严重故障</timeline-item>-->
+															<timeline-item color="blue">2020/2/20 -- 发布1.0版本</timeline-item>
+														
 													</timeline>
 											</i-content>
 
 											<!---->
-											<i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}" v-if="currentMenu == 2 ">
+											<i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}" v-if="currentMenu == 2.1 ">										
+													<breadcrumb>
+													        <breadcrumb-item to="">主页</breadcrumb-item>
+													        <breadcrumb-item to="">客户端</breadcrumb-item>
+													        <breadcrumb-item>客户端下载</breadcrumb-item>
+													</breadcrumb>
+													
 													<tabs>
-															<tab-pane label="Windows" icon="logo-windows">标签二的内容</tab-pane>
-															<tab-pane label="macOS" icon="logo-apple">标签一的内容</tab-pane>
+															<tab-pane label="Windows" icon="logo-windows">
+																<Alert type="warning" show-icon>
+																	A warning prompt
+																	<template slot="desc">
+																	暂未发布！
+																	</template>
+																</Alert>
+																
+																<row :gutter="16">
+																		<i-col span="6">
+																			<card>
+																				<p slot="title">测试版 6.3</p>
+																				<p>Content of card</p>
+																				<p>Content of card</p>
+																				<p>Content of card</p>
+																			</card>
+																		</i-col>
+																</row>
+																													
+															</tab-pane>
+															<tab-pane label="macOS" icon="logo-apple">
+																<Alert type="warning" show-icon>
+																	A warning prompt
+																	<template slot="desc">
+																	暂未发布！
+																	</template>
+																</Alert>
+																
+																<row :gutter="16">
+																		<i-col span="6">
+																			<card>
+																				<p slot="title">测试版 6.3</p>
+																				<p>Content of card</p>
+																				<p>Content of card</p>
+																				<p>Content of card</p>
+																			</card>
+																		</i-col>
+																</row>
+																
+															</tab-pane>
 													</tabs>
 											</i-content>
                     </layout>
@@ -130,15 +181,24 @@
 
 <script>
     var data = {
-        currentMenu: 0,
+        currentMenu: '1.1',
     }
     var Main = new Vue({
         el: '#main',
         data: data,
 				methods:{
-					changePage: function(e){
-						this.currentMenu = e;
-						console.log(e)
+					changePage: function(name){
+						this.currentMenu = name;
+						console.log(name)
+					},
+					start () {
+						this.$Loading.start();
+					},
+					finish () {
+						this.$Loading.finish();
+					},
+					error () {
+						this.$Loading.error();
 					}
 				}
     })
