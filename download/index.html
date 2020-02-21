@@ -26,6 +26,9 @@
         height: 1000px;
     }
     
+	.ivu-timeline-item-content{
+		background-color:none;
+	}
     .layout {
         border: 1px solid #d7dde4;
         background: #f5f7f9;
@@ -167,7 +170,7 @@
 													
 													<layout v-for="items in serverUpdtae">
 														<timeline-item :color="items.isError?'red':'green'">
-															<collapse simple>
+															<collapse simple style="margin=0;padding=0">
 																<panel name="items.index" >
 																	{{items.date}}- MOE {{items.version}}
 																	<p slot="content" v-for="item in items.update">
