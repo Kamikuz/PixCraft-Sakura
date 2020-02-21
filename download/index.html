@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import Vue.js -->
+    <script src="https://vuejs.org/js/vue.min.js"></script>
+    <!-- import stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/view-design/dist/styles/iview.css">
+    <!-- import iView -->
+    <script src="https://unpkg.com/view-design/dist/iview.min.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<!--
+		<script src="https://cdn.jsdelivr.net/npm/flv.js/dist/flv.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+		-->
+		<script src="https://unpkg.com/showdown@1.9.0/dist/showdown.min.js"></script>
+		<script src="https://unpkg.com/vue-showdown@2.3.0/dist/vue-showdown.min.js"></script>
+    <title>客户端下载</title>
+</head>
+<style>
+    #app {
+        padding: 32px;
+        height: 1000px;
+    }
+    
+    .layout {
+        border: 1px solid #d7dde4;
+        background: #f5f7f9;
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    
+    .layout-logo {
+        width: 100px;
+        height: 30px;
+        background: #5b6270;
+        border-radius: 3px;
+        float: left;
+        position: relative;
+        top: 15px;
+        left: 20px;
+    }
+    
+    .layout-nav {
+        width: 420px;
+        margin: 0 auto;
+        margin-right: 20px;
+    }
+</style>
+
+<body>
+    <div id="main">
+			<div class="layout">
+				<layout>
+						<i-header>
+								<i-menu mode="horizontal" theme="dark" active-name="1" width="auto">
+										<div class="layout-logo"></div>
+										<div class="layout-nav">
+												<menu-item name="1">
+														<i-Button type="text" ghost to="https://mc.kamikuz.cn" icon="ios-home-outline">
+															<span>官网</span>
+														</i-Button>
+												</menu-item>
+												<menu-item name="2">
+														<i-Button type="text" ghost to="https://map.mc.kamikuz.cn" icon="ios-map-outline">
+															<span>地图</span>
+														</i-Button>
+												</menu-item>
+												<menu-item name="3">
+														<i-Button type="text" ghost to="https://mc.kamikuz.cn" icon="ios-map-outline">
+															<span>问题|疑惑</span>
+														</i-Button>
+												</menu-item>
+										</div>
+								</i-menu>
+						</i-header>
+
+						<layout>
+								<sider hide-trigger :style="{background: '#fff'}">
+										<i-menu active-name="1-1" theme="light" width="auto" :open-names="['1']" accordion @on-select="changePage">
+												<submenu name="1">
+														<template slot="title">
+																<icon type="ios-navigate"></icon>
+																服务器概览
+														</template>
+														<menu-item name="1.1">服务器信息</menu-item>
+														<menu-item name="1.2">服务器 更新记录</menu-item>
+												</submenu>
+												<submenu name="2">
+														<template slot="title">
+																<icon type="ios-keypad"></icon>
+																客户端下载
+														</template>
+														<menu-item name="2.1">下载</menu-item>
+												</submenu>
+												<submenu name="3">
+														<template slot="title">
+																<icon type="ios-analytics"></icon>
+																用户中心
+														</template>
+														<menu-item name="3.1">账号 | 角色</menu-item>
+														<menu-item name="3.2">权限 | 经济</menu-item>
+												</submenu>
+										</i-menu>
+								</sider>
+
+								<!---->
+								<layout :style="{}">
+									<!---->
+									<i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}" v-if="currentMenu == 1.1 ">
+										<breadcrumb>
+														<breadcrumb-item to="">主页</breadcrumb-item>
+														<breadcrumb-item to="">服务器</breadcrumb-item>
+														<breadcrumb-item>服务器信息</breadcrumb-item>
+										</breadcrumb>
+										
+										<Row :style="{padding: '10px'}">
+											<i-col span="6">
+												<Card>
+													<p slot="title">服务器版本</p>
+													<p>
+														<tag size="large" color="primary">{{serverUpdtae[0].MCVersion}}</tag>
+														<tag size="large" color="success">Forge {{serverUpdtae[0].ForgeVersion}}</tag>
+														
+													</p>
+												</Card>
+											</i-col>
+											<i-col span="6">
+												<Card>
+													<p slot="title">运行状态</p>
+													<tag size="large" color="primary" v-if="serverStatus.online">运行中</tag>
+												</Card>
+											</i-col>
+											<i-col span="6">
+												<Card>
+													<p slot="title">实时人数</p>
+													<p style="margin: auto;padding: 0;">
+														<Tag color="blue">{{serverStatus.players.now}}</Tag> | 
+														<Tag color="red">{{serverStatus.players.max}}</Tag>
+													</p>
+												</Card>
+											</i-col>
+											<i-col span="6">
+												<Card>
+													<p slot="title">服务器统计</p>
+													
+												</Card>
+											</i-col>
+										</Row>
+										
+										
+									</i-content>
+									
+									<!---->
+									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 1.2 ">
+										<breadcrumb>
+														<breadcrumb-item to="">主页</breadcrumb-item>
+														<breadcrumb-item to="">服务器</breadcrumb-item>
+														<breadcrumb-item>服务器更新记录</breadcrumb-item>
+										</breadcrumb>
+											<timeline :style="{padding: '24px'}" >
+													<timeline-item color="blue">研发中</timeline-item>
+													
+													<layout v-for="items in serverUpdtae">
+														<timeline-item :color="items.isError?'red':'green'">
+															<collapse simple>
+																<panel name="items.index" >
+																	{{items.date}}- MOE {{items.version}}
+																	<p slot="content" v-for="item in items.update">
+																		✏️ {{item}}
+																	</p>
+																</panel>
+															</collapse>
+														</timeline-item>
+													</layout>
+												
+											</timeline>
+									</i-content>
+
+									<!---->
+									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 2.1 ">										
+											<breadcrumb>
+															<breadcrumb-item to="">主页</breadcrumb-item>
+															<breadcrumb-item to="">客户端</breadcrumb-item>
+															<breadcrumb-item>客户端下载</breadcrumb-item>
+											</breadcrumb>
+											
+											<tabs>
+													<tab-pane label="Windows" icon="logo-windows">															
+														<row :gutter="16">
+																<i-col span="6">
+																	<card style="width: 300px;" title="客户端下载" icon="ios-options">
+																		<Alert type="warning" show-icon>
+																			提示
+																			<template slot="desc">
+																			目前仍然处于初期阶段，客户端存在大量BUG！如遇到问题请及时反馈！
+																			</template>
+																		</Alert>
+																		 <cell-group>
+																			<cell><tag color="primary">{{releaseList.tag_name}}</tag></cell>
+																		</cell-group>
+																		<collapse simple style="width:auto;margin: 5px;">
+																			<panel name="1">
+																				更新内容
+																				<p slot="content"><vue-showdown :markdown="releaseList.body"/></p>
+																			</panel>
+																		</collapse>
+																		<i-button long size="buttonSize" icon="ios-download-outline" type="primary" :to="releaseList.assets[0].browser_download_url" target="_blank">下载</i-button>
+																	</card>
+																</i-col>
+														</row>
+																											
+													</tab-pane>
+													<tab-pane label="macOS" icon="logo-apple">
+														<row :gutter="16">
+																<i-col span="6">
+																	<card style="width: 300px;" title="客户端下载" icon="ios-options">
+																		<template v-if="releaseList.assets[1]">
+																		 <cell-group>
+																			<cell><tag color="primary">{{releaseList.tag_name}}</tag></cell>
+																		</cell-group>
+																		<collapse v-model="value4" simple style="width:auto;margin: 5px;">
+																			<panel name="1">
+																				更新内容
+																				<p slot="content"><vue-showdown :markdown="releaseList.body"/></p>
+																			</panel>
+																		</collapse>
+																		
+																			<i-button long size="buttonSize" icon="ios-download-outline" type="primary" :to="releaseList.assets[1].browser_download_url" target="_blank">下载</i-button>
+																		</template>
+																		<template v-else>
+																			<Alert type="warning" show-icon>
+																				啊咧？
+																				<template slot="desc">
+																				目前没有发现资源哦！
+																				</template>
+																			</Alert>
+																			<i-button long size="buttonSize" icon="ios-download-outline" type="primary" disabled>暂无资源</i-button>
+																		</template>
+																	</card>
+																</i-col>
+														</row>
+													</tab-pane>
+											</tabs>
+									</i-content>
+									
+									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 3.1 ">
+										<breadcrumb>
+														<breadcrumb-item to="">主页</breadcrumb-item>
+														<breadcrumb-item to="">用户中心</breadcrumb-item>
+														<breadcrumb-item>账户 | 角色</breadcrumb-item>
+										</breadcrumb>
+										
+										<Alert type="warning" show-icon>
+											Ops!
+											<template slot="desc">
+											本功能暂时关闭！
+											</template>
+										</Alert>
+									</i-content>
+									
+									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 3.2 ">
+										<breadcrumb>
+														<breadcrumb-item to="">主页</breadcrumb-item>
+														<breadcrumb-item to="">用户中心</breadcrumb-item>
+														<breadcrumb-item>权限 | 经济</breadcrumb-item>
+										</breadcrumb>
+										
+										<Alert type="warning" show-icon>
+											Ops!
+											<template slot="desc">
+											本功能暂时关闭！
+											</template>
+										</Alert>
+									</i-content>
+									
+								</layout>
+						</layout>
+				</layout>
+			</div>
+    </div>
+</body>
+
+<script>
+	Vue.prototype.$axios = axios;
+	console.log('\n' + ' %c MoeTech v1.0' + ' %c http://moe.kamikuz.cn ' + '\n' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+    var data = {
+        currentMenu: '1.1',
+				serverUpdtae:null,
+				value2: 0,
+				releaseList: null,
+				time2: (new Date()).getTime() - 86400 * 3 * 1000,
+				readmeContent:null,
+				serverStatus: null,
+    }
+		
+    var Main = new Vue({
+			el: '#main',
+			data: data,
+			methods:{			
+				changePage: function(name){
+					this.currentMenu = name;				
+				},
+				getServerStatus:function(){
+					return this.$axios({
+												url:'https://mcapi.us/server/status?ip=server.kamikuz.cn&port=25565',
+												method:'GET',
+											})
+				},
+				getRelease:function(){
+					return this.$axios({
+												url:'https://api.github.com/repos/Kamikuz/Atorasumonogatari/releases',
+												method:'GET',
+											})
+				},
+				getServerUpdate:function(){
+					return this.$axios({
+												url:'https://raw.githubusercontent.com/Kamikuz/Atorasumonogatari/master/update.json',
+												method:'GET',
+											})
+				}
+			},
+			mounted () {
+				this.$Loading.start();
+				this.$axios.all([this.getServerStatus(),this.getRelease(),this.getServerUpdate()])
+				    .then(this.$axios.spread(function(aList, bList, cList){
+							this.data.releaseList = bList.data[0];
+							this.data.serverUpdtae = cList.data;
+							this.data.serverStatus = aList.data;
+							if(aList.data.motd == ""){
+								console.log('\n' + ' %c 错误' + ' %c API查询错误 \n\n', 'color: #ffffff; background: #ff0000; padding:5px 0;', 'background: #ff5500; color: #ffffff; padding:5px 0;');
+								this.data.serverStatus.error = "true";
+							}
+							console.log(this.data.serverUpdtae);
+							console.log(this.data.serverStatus);
+				    }))
+						.catch(function (error) {
+						    console.log(error);
+								this.$Loading.error();
+						  });
+				this.$Loading.finish();
+			}
+			
+		})
+</script>
+
+</html>
