@@ -11,9 +11,11 @@
     <!-- import iView -->
     <script src="https://unpkg.com/view-design/dist/iview.min.js"></script>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<!--
 		<script src="https://cdn.jsdelivr.net/npm/flv.js/dist/flv.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css">
 		<script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+		-->
 		<script src="https://unpkg.com/showdown@1.9.0/dist/showdown.min.js"></script>
 		<script src="https://unpkg.com/vue-showdown@2.3.0/dist/vue-showdown.min.js"></script>
     <title>客户端下载</title>
@@ -116,6 +118,33 @@
 														<breadcrumb-item>服务器信息</breadcrumb-item>
 										</breadcrumb>
 										
+										<Row :style="{padding: '10px'}">
+											<i-col span="6">
+												<Card>
+													<p slot="title">服务器版本</p>
+													<p>Content of card</p>
+												</Card>
+											</i-col>
+											<i-col span="6">
+												<Card>
+													<p slot="title">运行状态</p>
+													<p>Content of card</p>
+												</Card>
+											</i-col>
+											<i-col span="6">
+												<Card>
+													<p slot="title">实时人数</p>
+													<p>Content of card</p>
+												</Card>
+											</i-col>
+											<i-col span="6">
+												<Card>
+													<p slot="title">服务器统计</p>
+													<p>Content of card</p>
+												</Card>
+											</i-col>
+										</Row>
+										
 										
 									</i-content>
 									
@@ -127,39 +156,20 @@
 														<breadcrumb-item>服务器更新记录</breadcrumb-item>
 										</breadcrumb>
 											<timeline :style="{padding: '24px'}" >
-												<!--
-													<timeline-item color="green">发布3.0版本</timeline-item>
-													<timeline-item color="green">发布2.0版本</timeline-item>
-													<timeline-item color="red">严重故障</timeline-item>-->
 													<timeline-item color="blue">研发中</timeline-item>
-													<timeline-item color="green">
-														<collapse v-model="value1" simple>
-															<panel name="1">
-																2020/2/12 -- MOE 3.1
-																<p slot="content"></p>
-															</panel>
-														</collapse>
-													</timeline-item>
-													<timeline-item color="green">
-														<collapse v-model="value2" simple>
-															<panel name="1">
-																2020/2/12 -- MOE 2.2
-																<p slot="content">
-																	<List header="Header" footer="Footer" border size="small" v-for="item in serverUpdtae">
-																		<ListItem>item</ListItem>
-																	</List>
-																</p>
-															</panel>
-														</collapse>
-													</timeline-item>
-													<timeline-item color="green">
-														<collapse v-model="value3" simple>
-															<panel name="1">
-																2020/2/10 -- MOE 2.1
-																<p slot="content"></p>
-															</panel>
-														</collapse>
-													</timeline-item>
+													
+													<layout v-for="items in serverUpdtae">
+														<timeline-item :color="items.isError?'red':'green'">
+															<collapse simple>
+																<panel name="items.index" >
+																	{{items.date}}- MOE {{items.version}}
+																	<p slot="content" v-for="item in items.update">
+																		✏️ {{item}}
+																	</p>
+																</panel>
+															</collapse>
+														</timeline-item>
+													</layout>
 												
 											</timeline>
 									</i-content>
@@ -186,7 +196,7 @@
 																		 <cell-group>
 																			<cell><tag color="primary">{{releaseList.tag_name}}</tag></cell>
 																		</cell-group>
-																		<collapse v-model="value4" simple style="width:auto;margin: 5px;">
+																		<collapse simple style="width:auto;margin: 5px;">
 																			<panel name="1">
 																				更新内容
 																				<p slot="content"><vue-showdown :markdown="releaseList.body"/></p>
@@ -277,38 +287,53 @@
 				value2: 0,
 				releaseList: null,
 				time2: (new Date()).getTime() - 86400 * 3 * 1000,
-				value1:0,
-				value2:0,
-				value3:0,
-				value4:0,
-				readmeContent:null
+				readmeContent:null,
+				serverStatus: null
     }
 		
     var Main = new Vue({
-        el: '#main',
-        data: data,
-				methods:{			
-					changePage: function(name){
-						this.currentMenu = name;
-						console.log(this.serverUpdtae)
-						
-					},
-					start () {
-						this.$Loading.start();
-					},
-					finish () {
-						this.$Loading.finish();
-					},
-					error () {
-						this.$Loading.error();
-					}
+			el: '#main',
+			data: data,
+			methods:{			
+				changePage: function(name){
+					this.currentMenu = name;				
 				},
-				mounted () {
-				    axios
-				      .get('https://api.github.com/repos/Kamikuz/Atorasumonogatari/releases')
-				      .then(response => (this.releaseList = response.data[0],this.serverUpdtae = response.data[0]))	
-				  },
-    })
+				getServerStatus:function(){
+					return this.$axios({
+												url:'https://mcapi.us/server/status?ip=server.kamikuz.cn&port=25565',
+												method:'GET',
+											})
+				},
+				getRelease:function(){
+					return this.$axios({
+												url:'https://api.github.com/repos/Kamikuz/Atorasumonogatari/releases',
+												method:'GET',
+											})
+				},
+				getServerUpdate:function(){
+					return this.$axios({
+												url:'https://raw.githubusercontent.com/Kamikuz/Atorasumonogatari/master/update.json',
+												method:'GET',
+											})
+				}
+			},
+			mounted () {
+				this.$Loading.start();
+				this.$axios.all([this.getServerStatus(),this.getRelease(),this.getServerUpdate()])
+				    .then(this.$axios.spread(function(aList, bList, cList){
+							this.data.releaseList = bList.data[0];
+							this.data.serverUpdtae = cList.data;
+							this.data.serverStatus = aList.data;
+							console.log(this.data.serverStatus);
+				    }))
+						.catch(function (error) {
+						    console.log(error);
+								this.$Loading.error();
+						  });
+				this.$Loading.finish();
+			}
+			
+		})
 </script>
 
 </html>
