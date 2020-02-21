@@ -136,6 +136,8 @@
 												<Card>
 													<p slot="title">运行状态</p>
 													<tag size="large" color="primary" v-if="serverStatus.online">运行中</tag>
+													<tag size="large" color="warning" v-else-if=" serverStatus.motd == '' ">API错误</tag>
+													<tag size="large" color="error" v-else >维护中</tag>
 												</Card>
 											</i-col>
 											<i-col span="6">
