@@ -122,25 +122,32 @@
 											<i-col span="6">
 												<Card>
 													<p slot="title">服务器版本</p>
-													<p>Content of card</p>
+													<p>
+														<tag size="large" color="primary">{{serverUpdtae[0].MCVersion}}</tag>
+														<tag size="large" color="success">Forge {{serverUpdtae[0].ForgeVersion}}</tag>
+														
+													</p>
 												</Card>
 											</i-col>
 											<i-col span="6">
 												<Card>
 													<p slot="title">运行状态</p>
-													<p>Content of card</p>
+													<tag size="large" color="primary" v-if="serverStatus.online">运行中</tag>
 												</Card>
 											</i-col>
 											<i-col span="6">
 												<Card>
 													<p slot="title">实时人数</p>
-													<p>Content of card</p>
+													<p style="margin: auto;padding: 0;">
+														<Tag color="blue">{{serverStatus.players.now}}</Tag> | 
+														<Tag color="red">{{serverStatus.players.max}}</Tag>
+													</p>
 												</Card>
 											</i-col>
 											<i-col span="6">
 												<Card>
 													<p slot="title">服务器统计</p>
-													<p>Content of card</p>
+													
 												</Card>
 											</i-col>
 										</Row>
@@ -280,7 +287,7 @@
 
 <script>
 	Vue.prototype.$axios = axios;
-	console.log('\n' + ' %c MoeTech v1.0' + ' %c http://bb.kamikuz.cn ' + '\n' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+	console.log('\n' + ' %c MoeTech v1.0' + ' %c http://moe.kamikuz.cn ' + '\n' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
     var data = {
         currentMenu: '1.1',
 				serverUpdtae:null,
@@ -288,7 +295,7 @@
 				releaseList: null,
 				time2: (new Date()).getTime() - 86400 * 3 * 1000,
 				readmeContent:null,
-				serverStatus: null
+				serverStatus: null,
     }
 		
     var Main = new Vue({
@@ -324,6 +331,11 @@
 							this.data.releaseList = bList.data[0];
 							this.data.serverUpdtae = cList.data;
 							this.data.serverStatus = aList.data;
+							if(aList.data.motd == ""){
+								console.log('\n' + ' %c 错误' + ' %c API查询错误 \n\n', 'color: #ffffff; background: #ff0000; padding:5px 0;', 'background: #ff5500; color: #ffffff; padding:5px 0;');
+								this.data.serverStatus.error = "true";
+							}
+							console.log(this.data.serverUpdtae);
 							console.log(this.data.serverStatus);
 				    }))
 						.catch(function (error) {
