@@ -1,0 +1,34 @@
+[
+    {
+        "version": "1.0",
+        "date": "2020年2月20日",
+        "sid": "200220A",
+        "MCVersion": "1.12.2",
+        "ForgeVersion": "2847",
+        "isError": false,
+        "isDelay": false,
+        "delayReason": "",
+        "isPublished": true,
+        "update": {
+            "0": "优化了客户端的交互性",
+            "1": "移除旧的插件",
+            "2": "使用全新的CatServer内核"
+        }
+    },
+    {
+        "version": "1.0",
+        "date": "2020年2月20日",
+        "sid": "200220A",
+        "MCVersion": "1.12.2",
+        "ForgeVersion": "2838",
+        "isError": false,
+        "isDelay": false,
+        "delayReason": "",
+        "isPublished": true,
+        "update": {
+            "0": "使用全新的Catserver内核取代Sponge",
+            "1": "添加若干插件",
+            "2": "添加若干RTM Addons"
+        }
+    }
+]
