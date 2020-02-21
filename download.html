@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://unpkg.com/view-design/dist/styles/iview.css">
     <!-- import iView -->
     <script src="https://unpkg.com/view-design/dist/iview.min.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/flv.js/dist/flv.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+		<script src="https://unpkg.com/showdown@1.9.0/dist/showdown.min.js"></script>
+		<script src="https://unpkg.com/vue-showdown@2.3.0/dist/vue-showdown.min.js"></script>
     <title>客户端下载</title>
 </head>
 <style>
@@ -46,150 +52,246 @@
 
 <body>
     <div id="main">
-        <div class="layout">
-            <layout>
+			<div class="layout">
+				<layout>
+						<i-header>
+								<i-menu mode="horizontal" theme="dark" active-name="1" width="auto">
+										<div class="layout-logo"></div>
+										<div class="layout-nav">
+												<menu-item name="1">
+														<i-Button type="text" ghost to="https://mc.kamikuz.cn" icon="ios-home-outline">
+															<span>官网</span>
+														</i-Button>
+												</menu-item>
+												<menu-item name="2">
+														<i-Button type="text" ghost to="https://map.mc.kamikuz.cn" icon="ios-map-outline">
+															<span>地图</span>
+														</i-Button>
+												</menu-item>
+												<menu-item name="3">
+														<i-Button type="text" ghost to="https://mc.kamikuz.cn" icon="ios-map-outline">
+															<span>问题|疑惑</span>
+														</i-Button>
+												</menu-item>
+										</div>
+								</i-menu>
+						</i-header>
 
-                <i-header>
-                    <i-menu mode="horizontal" theme="dark" active-name="1" width="auto">
-                        <div class="layout-logo"></div>
-                        <div class="layout-nav">
-                            <menu-item name="1">
-                                <i-Button type="text" ghost to="https://mc.kamikuz.cn" icon="ios-home-outline">
-																	<span>官网</span>
-																</i-Button>
-                            </menu-item>
-                            <menu-item name="2">
-																<i-Button type="text" ghost to="https://map.mc.kamikuz.cn" icon="ios-map-outline">
-																	<span>地图</span>
-																</i-Button>
-                            </menu-item>
-                            <menu-item name="3">
-																<i-Button type="text" ghost to="https://mc.kamikuz.cn" icon="ios-map-outline">
-																	<span>问题|疑惑</span>
-																</i-Button>
-                            </menu-item>
-                        </div>
-                    </i-menu>
-                </i-header>
+						<layout>
+								<sider hide-trigger :style="{background: '#fff'}">
+										<i-menu active-name="1-1" theme="light" width="auto" :open-names="['1']" accordion @on-select="changePage">
+												<submenu name="1">
+														<template slot="title">
+																<icon type="ios-navigate"></icon>
+																服务器概览
+														</template>
+														<menu-item name="1.1">服务器信息</menu-item>
+														<menu-item name="1.2">服务器 更新记录</menu-item>
+												</submenu>
+												<submenu name="2">
+														<template slot="title">
+																<icon type="ios-keypad"></icon>
+																客户端下载
+														</template>
+														<menu-item name="2.1">下载</menu-item>
+												</submenu>
+												<submenu name="3">
+														<template slot="title">
+																<icon type="ios-analytics"></icon>
+																用户中心
+														</template>
+														<menu-item name="3.1">账号 | 角色</menu-item>
+														<menu-item name="3.2">权限 | 经济</menu-item>
+												</submenu>
+										</i-menu>
+								</sider>
 
-                <layout>
-                    <sider hide-trigger :style="{background: '#fff'}">
-                        <i-menu active-name="1-1" theme="light" width="auto" :open-names="['1']" accordion @on-select="changePage">
-                            <submenu name="1">
-                                <template slot="title">
-                                    <icon type="ios-navigate"></icon>
-                                    服务器概览
-                                </template>
-                                <menu-item name="1.1">服务器信息</menu-item>
-                                <menu-item name="1.2">服务器 更新记录</menu-item>
-                            </submenu>
-                            <submenu name="2">
-                                <template slot="title">
-                                    <icon type="ios-keypad"></icon>
-                                    客户端下载
-                                </template>
-                                <menu-item name="2.1">下载</menu-item>
-                            </submenu>
-                            <submenu name="3">
-                                <template slot="title">
-                                    <icon type="ios-analytics"></icon>
-                                    用户中心
-                                </template>
-                                <menu-item name="3.1">账号 | 角色</menu-item>
-                                <menu-item name="3.2">权限 | 经济</menu-item>
-                            </submenu>
-                        </i-menu>
-                    </sider>
+								<!---->
+								<layout :style="{}">
+									<!---->
+									<i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}" v-if="currentMenu == 1.1 ">
+										<breadcrumb>
+														<breadcrumb-item to="">主页</breadcrumb-item>
+														<breadcrumb-item to="">服务器</breadcrumb-item>
+														<breadcrumb-item>服务器信息</breadcrumb-item>
+										</breadcrumb>
+										
+										
+									</i-content>
+									
+									<!---->
+									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 1.2 ">
+										<breadcrumb>
+														<breadcrumb-item to="">主页</breadcrumb-item>
+														<breadcrumb-item to="">服务器</breadcrumb-item>
+														<breadcrumb-item>服务器更新记录</breadcrumb-item>
+										</breadcrumb>
+											<timeline :style="{padding: '24px'}" >
+												<!--
+													<timeline-item color="green">发布3.0版本</timeline-item>
+													<timeline-item color="green">发布2.0版本</timeline-item>
+													<timeline-item color="red">严重故障</timeline-item>-->
+													<timeline-item color="blue">研发中</timeline-item>
+													<timeline-item color="green">
+														<collapse v-model="value1" simple>
+															<panel name="1">
+																2020/2/12 -- MOE 3.1
+																<p slot="content"></p>
+															</panel>
+														</collapse>
+													</timeline-item>
+													<timeline-item color="green">
+														<collapse v-model="value2" simple>
+															<panel name="1">
+																2020/2/12 -- MOE 2.2
+																<p slot="content">
+																	<List header="Header" footer="Footer" border size="small" v-for="item in serverUpdtae">
+																		<ListItem>item</ListItem>
+																	</List>
+																</p>
+															</panel>
+														</collapse>
+													</timeline-item>
+													<timeline-item color="green">
+														<collapse v-model="value3" simple>
+															<panel name="1">
+																2020/2/10 -- MOE 2.1
+																<p slot="content"></p>
+															</panel>
+														</collapse>
+													</timeline-item>
+												
+											</timeline>
+									</i-content>
 
-                    <!---->
-                    <layout :style="{}">
-											<!---->
-											<i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}" v-if="currentMenu == 1.1 ">
-												asdasda
-											</i-content>
+									<!---->
+									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 2.1 ">										
+											<breadcrumb>
+															<breadcrumb-item to="">主页</breadcrumb-item>
+															<breadcrumb-item to="">客户端</breadcrumb-item>
+															<breadcrumb-item>客户端下载</breadcrumb-item>
+											</breadcrumb>
 											
-											<!---->
-											<i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}" v-if="currentMenu == 1.2 ">
-													<timeline>
-														<!--
-															<timeline-item color="green">发布3.0版本</timeline-item>
-															<timeline-item color="green">发布2.0版本</timeline-item>
-															<timeline-item color="red">严重故障</timeline-item>-->
-															<timeline-item color="blue">2020/2/20 -- 发布1.0版本</timeline-item>
-														
-													</timeline>
-											</i-content>
-
-											<!---->
-											<i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}" v-if="currentMenu == 2.1 ">										
-													<breadcrumb>
-													        <breadcrumb-item to="">主页</breadcrumb-item>
-													        <breadcrumb-item to="">客户端</breadcrumb-item>
-													        <breadcrumb-item>客户端下载</breadcrumb-item>
-													</breadcrumb>
-													
-													<tabs>
-															<tab-pane label="Windows" icon="logo-windows">
-																<Alert type="warning" show-icon>
-																	A warning prompt
-																	<template slot="desc">
-																	暂未发布！
-																	</template>
-																</Alert>
-																
-																<row :gutter="16">
-																		<i-col span="6">
-																			<card>
-																				<p slot="title">测试版 6.3</p>
-																				<p>Content of card</p>
-																				<p>Content of card</p>
-																				<p>Content of card</p>
-																			</card>
-																		</i-col>
-																</row>
-																													
-															</tab-pane>
-															<tab-pane label="macOS" icon="logo-apple">
-																<Alert type="warning" show-icon>
-																	A warning prompt
-																	<template slot="desc">
-																	暂未发布！
-																	</template>
-																</Alert>
-																
-																<row :gutter="16">
-																		<i-col span="6">
-																			<card>
-																				<p slot="title">测试版 6.3</p>
-																				<p>Content of card</p>
-																				<p>Content of card</p>
-																				<p>Content of card</p>
-																			</card>
-																		</i-col>
-																</row>
-																
-															</tab-pane>
-													</tabs>
-											</i-content>
-                    </layout>
-                </layout>
-            </layout>
-        </div>
+											<tabs>
+													<tab-pane label="Windows" icon="logo-windows">															
+														<row :gutter="16">
+																<i-col span="6">
+																	<card style="width: 300px;" title="客户端下载" icon="ios-options">
+																		<Alert type="warning" show-icon>
+																			A warning prompt
+																			<template slot="desc">
+																			暂未发布！
+																			</template>
+																		</Alert>
+																		 <cell-group>
+																			<cell><tag color="primary">{{releaseList.tag_name}}</tag></cell>
+																		</cell-group>
+																		<collapse v-model="value4" simple style="width:auto;margin: 5px;">
+																			<panel name="1">
+																				更新内容
+																				<p slot="content"><vue-showdown :markdown="releaseList.body"/></p>
+																			</panel>
+																		</collapse>
+																		<i-button long size="buttonSize" icon="ios-download-outline" type="primary" :to="releaseList.assets[0].browser_download_url" target="_blank">下载</i-button>
+																	</card>
+																</i-col>
+														</row>
+																											
+													</tab-pane>
+													<tab-pane label="macOS" icon="logo-apple">
+														<row :gutter="16">
+																<i-col span="6">
+																	<card style="width: 300px;" title="客户端下载" icon="ios-options">
+																		<template v-if="releaseList.assets[1]">
+																		 <cell-group>
+																			<cell><tag color="primary">{{releaseList.tag_name}}</tag></cell>
+																		</cell-group>
+																		<collapse v-model="value4" simple style="width:auto;margin: 5px;">
+																			<panel name="1">
+																				更新内容
+																				<p slot="content"><vue-showdown :markdown="releaseList.body"/></p>
+																			</panel>
+																		</collapse>
+																		
+																			<i-button long size="buttonSize" icon="ios-download-outline" type="primary" :to="releaseList.assets[1].browser_download_url" target="_blank">下载</i-button>
+																		</template>
+																		<template v-else>
+																			<Alert type="warning" show-icon>
+																				啊咧？
+																				<template slot="desc">
+																				目前没有发现资源哦！
+																				</template>
+																			</Alert>
+																			<i-button long size="buttonSize" icon="ios-download-outline" type="primary" disabled>暂无资源</i-button>
+																		</template>
+																	</card>
+																</i-col>
+														</row>
+													</tab-pane>
+											</tabs>
+									</i-content>
+									
+									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 3.1 ">
+										<breadcrumb>
+														<breadcrumb-item to="">主页</breadcrumb-item>
+														<breadcrumb-item to="">用户中心</breadcrumb-item>
+														<breadcrumb-item>账户 | 角色</breadcrumb-item>
+										</breadcrumb>
+										
+										<Alert type="warning" show-icon>
+											Ops!
+											<template slot="desc">
+											本功能暂时关闭！
+											</template>
+										</Alert>
+									</i-content>
+									
+									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 3.2 ">
+										<breadcrumb>
+														<breadcrumb-item to="">主页</breadcrumb-item>
+														<breadcrumb-item to="">用户中心</breadcrumb-item>
+														<breadcrumb-item>权限 | 经济</breadcrumb-item>
+										</breadcrumb>
+										
+										<Alert type="warning" show-icon>
+											Ops!
+											<template slot="desc">
+											本功能暂时关闭！
+											</template>
+										</Alert>
+									</i-content>
+									
+								</layout>
+						</layout>
+				</layout>
+			</div>
     </div>
 </body>
 
-
 <script>
+	Vue.prototype.$axios = axios;
+	console.log('\n' + ' %c MoeTech v1.0' + ' %c http://bb.kamikuz.cn ' + '\n' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
     var data = {
         currentMenu: '1.1',
+				serverUpdtae:null,
+				value2: 0,
+				releaseList: null,
+				time2: (new Date()).getTime() - 86400 * 3 * 1000,
+				value1:0,
+				value2:0,
+				value3:0,
+				value4:0,
+				readmeContent:null
     }
+		
     var Main = new Vue({
         el: '#main',
         data: data,
-				methods:{
+				methods:{			
 					changePage: function(name){
 						this.currentMenu = name;
-						console.log(name)
+						console.log(this.serverUpdtae)
+						
 					},
 					start () {
 						this.$Loading.start();
@@ -200,7 +302,12 @@
 					error () {
 						this.$Loading.error();
 					}
-				}
+				},
+				mounted () {
+				    axios
+				      .get('https://api.github.com/repos/Kamikuz/Atorasumonogatari/releases')
+				      .then(response => (this.releaseList = response.data[0],this.serverUpdtae = response.data[0]))	
+				  },
     })
 </script>
 
