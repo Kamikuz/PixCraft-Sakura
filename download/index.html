@@ -23,12 +23,8 @@
 <style>
     #app {
         padding: 32px;
-        height: 1000px;
     }
-    
-	.ivu-timeline-item-content{
-		background-color:none;
-	}
+
     .layout {
         border: 1px solid #d7dde4;
         background: #f5f7f9;
@@ -36,6 +32,10 @@
         border-radius: 4px;
         overflow: hidden;
     }
+		
+		.ivu-layout{
+			background: none;
+		}
     
     .layout-logo {
         width: 100px;
@@ -57,6 +57,7 @@
 
 <body>
     <div id="main">
+			<back-top></back-top>
 			<div class="layout">
 				<layout>
 						<i-header>
@@ -143,29 +144,50 @@
 											<i-col span="6">
 												<Card>
 													<p slot="title">实时人数</p>
-													<p style="margin: auto;padding: 0;">
-														<Tag color="blue">{{serverStatus.players.now}}</Tag> | 
-														<Tag color="red">{{serverStatus.players.max}}</Tag>
+													<template>
+														<List  size="small">
+															<List-item>
+																<Tag color="blue">{{serverStatus.players.now}}</Tag>
+																<divider type="vertical"></divider>
+																<Tag color="red">{{serverStatus.players.max}}</Tag>
+															</List-item>
+															<List-item></List-item>
+														</List>
+														
+														<strong>Small Size:</strong>
+														<List  size="small">
+															<List-item></List-item>
+															<List-item></List-item>
+														</List>
+													</template>
 													</p>
 												</Card>
 											</i-col>
 											<i-col span="6">
 												<Card>
 													<p slot="title">服务器统计</p>
-													
+													<template>
+														<strong>服务器运行时间</strong>
+														<List  size="small">
+															<List-item>开发中</List-item>
+															<List-item>开发中</List-item>
+														</List>
+														
+														<strong>世界大小</strong>
+														<List  size="small">
+															<List-item>1</List-item>
+															<List-item>2</List-item>
+														</List>
+													</template>
 												</Card>
 											</i-col>
 										</Row>
-										
-										
 									</i-content>
-									
-									<!---->
 									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 1.2 ">
 										<breadcrumb>
-														<breadcrumb-item to="">主页</breadcrumb-item>
-														<breadcrumb-item to="">服务器</breadcrumb-item>
-														<breadcrumb-item>服务器更新记录</breadcrumb-item>
+											<breadcrumb-item to="">主页</breadcrumb-item>
+											<breadcrumb-item to="">服务器</breadcrumb-item>
+											<breadcrumb-item>服务器更新记录</breadcrumb-item>
 										</breadcrumb>
 											<timeline :style="{padding: '24px'}" >
 													<timeline-item color="blue">研发中</timeline-item>
@@ -182,18 +204,14 @@
 															</collapse>
 														</timeline-item>
 													</layout>
-												
 											</timeline>
 									</i-content>
-
-									<!---->
-									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 2.1 ">										
+									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 2.1 ">
 											<breadcrumb>
-															<breadcrumb-item to="">主页</breadcrumb-item>
-															<breadcrumb-item to="">客户端</breadcrumb-item>
-															<breadcrumb-item>客户端下载</breadcrumb-item>
+												<breadcrumb-item to="">主页</breadcrumb-item>
+												<breadcrumb-item to="">客户端</breadcrumb-item>
+												<breadcrumb-item>客户端下载</breadcrumb-item>
 											</breadcrumb>
-											
 											<tabs>
 													<tab-pane label="Windows" icon="logo-windows">															
 														<row :gutter="16">
@@ -217,8 +235,7 @@
 																		<i-button long size="buttonSize" icon="ios-download-outline" type="primary" :to="releaseList.assets[0].browser_download_url" target="_blank">下载</i-button>
 																	</card>
 																</i-col>
-														</row>
-																											
+														</row>											
 													</tab-pane>
 													<tab-pane label="macOS" icon="logo-apple">
 														<row :gutter="16">
@@ -234,7 +251,6 @@
 																				<p slot="content"><vue-showdown :markdown="releaseList.body"/></p>
 																			</panel>
 																		</collapse>
-																		
 																			<i-button long size="buttonSize" icon="ios-download-outline" type="primary" :to="releaseList.assets[1].browser_download_url" target="_blank">下载</i-button>
 																		</template>
 																		<template v-else>
@@ -252,37 +268,50 @@
 													</tab-pane>
 											</tabs>
 									</i-content>
-									
 									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 3.1 ">
 										<breadcrumb>
-														<breadcrumb-item to="">主页</breadcrumb-item>
-														<breadcrumb-item to="">用户中心</breadcrumb-item>
-														<breadcrumb-item>账户 | 角色</breadcrumb-item>
+											<breadcrumb-item to="">主页</breadcrumb-item>
+											<breadcrumb-item to="">用户中心</breadcrumb-item>
+											<breadcrumb-item>账户 | 角色</breadcrumb-item>
 										</breadcrumb>
 										
-										<Alert type="warning" show-icon>
+										<Alert type="warning" show-icon style="margin: 20px;">
 											Ops!
 											<template slot="desc">
 											本功能暂时关闭！
 											</template>
 										</Alert>
+										
+										<i-form ref="formInline" :model="formInline" :rules="ruleInline" inline style="margin-left: 20px;">
+											<form-item prop="user">
+												<i-input type="text" v-model="formInline.user" placeholder="Username">
+													<icon type="ios-person-outline" slot="prepend"></icon>
+												</i-input>
+											</form-item>
+											<form-item prop="password">
+												<i-input type="password" v-model="formInline.password" placeholder="Password">
+													<icon type="ios-lock-outline" slot="prepend"></icon>
+												</i-input>
+											</form-item>
+											<form-item>
+											<i-button type="primary" @click="handleSubmit('formInline')">Signin</i-button>
+											</form-item>
+										</i-form>
+										
 									</i-content>
-									
 									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 3.2 ">
 										<breadcrumb>
-														<breadcrumb-item to="">主页</breadcrumb-item>
-														<breadcrumb-item to="">用户中心</breadcrumb-item>
-														<breadcrumb-item>权限 | 经济</breadcrumb-item>
+											<breadcrumb-item to="">主页</breadcrumb-item>
+											<breadcrumb-item to="">用户中心</breadcrumb-item>
+											<breadcrumb-item>权限 | 经济</breadcrumb-item>
 										</breadcrumb>
-										
-										<Alert type="warning" show-icon>
+										<Alert type="warning" style="margin: 20px;" show-icon >
 											Ops!
 											<template slot="desc">
 											本功能暂时关闭！
 											</template>
 										</Alert>
 									</i-content>
-									
 								</layout>
 						</layout>
 				</layout>
@@ -301,8 +330,20 @@
 				time2: (new Date()).getTime() - 86400 * 3 * 1000,
 				readmeContent:null,
 				serverStatus: null,
-    }
-		
+				formInline: {
+					user: '',
+					password: ''
+				},
+				ruleInline: {
+						user: [
+								{ required: true, message: 'Please fill in the user name', trigger: 'blur' }
+						],
+						password: [
+								{ required: true, message: 'Please fill in the password.', trigger: 'blur' },
+								{ type: 'string', min: 6, message: 'The password length cannot be less than 6 bits', trigger: 'blur' }
+						]
+				},
+		}
     var Main = new Vue({
 			el: '#main',
 			data: data,
@@ -327,6 +368,15 @@
 												url:'https://raw.githubusercontent.com/Kamikuz/Atorasumonogatari/master/update.json',
 												method:'GET',
 											})
+				},
+				handleSubmit(name) {
+					this.$refs[name].validate((valid) => {
+							if (valid) {
+									this.$Message.warning('目前服务暂停!');
+							} else {
+									this.$Message.error('输入有误!');
+							}
+					})
 				}
 			},
 			mounted () {
@@ -349,7 +399,6 @@
 						  });
 				this.$Loading.finish();
 			}
-			
 		})
 </script>
 

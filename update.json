@@ -1,5 +1,21 @@
 [
     {
+        "version": "2.2",
+        "date": "2020年2月23日",
+        "sid": "200223A",
+        "MCVersion": "1.12.2",
+        "ForgeVersion": "2838",
+        "isError": false,
+        "isDelay": false,
+        "delayReason": "",
+        "isPublished": true,
+        "update": {
+            "0": "更新MainMC",
+            "1": "增加imPet",
+            "2": "系统性备份"
+        }
+    },
+    {
         "version": "2.1",
         "date": "2020年2月20日",
         "sid": "200220B",
