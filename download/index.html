@@ -281,6 +281,23 @@
 											本功能暂时关闭！
 											</template>
 										</Alert>
+										
+										<i-form ref="formInline" :model="formInline" :rules="ruleInline" inline style="margin-left: 20px;">
+											<form-item prop="user">
+												<i-input type="text" v-model="formInline.user" placeholder="Username">
+													<icon type="ios-person-outline" slot="prepend"></icon>
+												</i-input>
+											</form-item>
+											<form-item prop="password">
+												<i-input type="password" v-model="formInline.password" placeholder="Password">
+													<icon type="ios-lock-outline" slot="prepend"></icon>
+												</i-input>
+											</form-item>
+											<form-item>
+											<i-button type="primary" @click="handleSubmit('formInline')">Signin</i-button>
+											</form-item>
+										</i-form>
+										
 									</i-content>
 									<i-content :style="{padding: '24px', minHeight: '1500px', background: '#fff'}" v-if="currentMenu == 3.2 ">
 										<breadcrumb>
@@ -313,7 +330,20 @@
 				time2: (new Date()).getTime() - 86400 * 3 * 1000,
 				readmeContent:null,
 				serverStatus: null,
-    }
+				formInline: {
+					user: '',
+					password: ''
+				},
+				ruleInline: {
+						user: [
+								{ required: true, message: 'Please fill in the user name', trigger: 'blur' }
+						],
+						password: [
+								{ required: true, message: 'Please fill in the password.', trigger: 'blur' },
+								{ type: 'string', min: 6, message: 'The password length cannot be less than 6 bits', trigger: 'blur' }
+						]
+				},
+		}
     var Main = new Vue({
 			el: '#main',
 			data: data,
@@ -338,6 +368,15 @@
 												url:'https://raw.githubusercontent.com/Kamikuz/Atorasumonogatari/master/update.json',
 												method:'GET',
 											})
+				},
+				handleSubmit(name) {
+					this.$refs[name].validate((valid) => {
+							if (valid) {
+									this.$Message.warning('目前服务暂停!');
+							} else {
+									this.$Message.error('输入有误!');
+							}
+					})
 				}
 			},
 			mounted () {
