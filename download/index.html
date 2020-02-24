@@ -232,7 +232,7 @@
 																				<p slot="content"><vue-showdown :markdown="releaseList.body"/></p>
 																			</panel>
 																		</collapse>
-																		<i-button long size="buttonSize" icon="ios-download-outline" type="primary" :to="releaseList.assets[0].browser_download_url" target="_blank">下载</i-button>
+																		<i-button long size="buttonSize" icon="ios-download-outline" type="primary" :to="releaseList.assets[1].browser_download_url" target="_blank">下载</i-button>
 																	</card>
 																</i-col>
 														</row>											
@@ -241,26 +241,23 @@
 														<row :gutter="16">
 																<i-col span="6">
 																	<card style="width: 300px;" title="客户端下载" icon="ios-options">
-																		<template v-if="releaseList.assets[1]">
+																		<template v-if="releaseList.assets[0]">
+																			<Alert type="warning" show-icon>
+																				提示
+																				<template slot="desc">
+																				目前仍然处于初期阶段，客户端存在大量BUG！如遇到问题请及时反馈！
+																				</template>
+																			</Alert>
 																		 <cell-group>
 																			<cell><tag color="primary">{{releaseList.tag_name}}</tag></cell>
 																		</cell-group>
-																		<collapse v-model="value4" simple style="width:auto;margin: 5px;">
+																		<collapse simple style="width:auto;margin: 5px;">
 																			<panel name="1">
 																				更新内容
 																				<p slot="content"><vue-showdown :markdown="releaseList.body"/></p>
 																			</panel>
 																		</collapse>
 																			<i-button long size="buttonSize" icon="ios-download-outline" type="primary" :to="releaseList.assets[1].browser_download_url" target="_blank">下载</i-button>
-																		</template>
-																		<template v-else>
-																			<Alert type="warning" show-icon>
-																				啊咧？
-																				<template slot="desc">
-																				目前没有发现资源哦！
-																				</template>
-																			</Alert>
-																			<i-button long size="buttonSize" icon="ios-download-outline" type="primary" disabled>暂无资源</i-button>
 																		</template>
 																	</card>
 																</i-col>
@@ -392,6 +389,7 @@
 							}
 							console.log(this.data.serverUpdtae);
 							console.log(this.data.serverStatus);
+							console.log(this.data.releaseList)
 				    }))
 						.catch(function (error) {
 						    console.log(error);
