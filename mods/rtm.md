@@ -2,7 +2,7 @@
 
 !> 该插件仅限[RTM工程师 | 红石工程师](/welcome/groups.md)（或更高级权限组）在[World](/welcome/servers.md)世界里使用。
 
-## 介绍
+## 介绍 :id=rtm-doc
 
    RTM(Real Train Mod)是由日本的ngt5479创作的基于日本铁路系统的模拟模组。使用这个模组，玩家可以建造立体的铁路，搭载列车。自动化信号控制等有趣的东西~ （火车迷的最爱！）
    
