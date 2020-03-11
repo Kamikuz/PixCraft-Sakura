@@ -1,5 +1,5 @@
 [homepage]: https://kamikuz.cn/
-[dynmap]: http://map.kamikuz.cn:8123
+[dynmap]: https://map.mc.kamikuz.cn/
 [qqgroup]: https://jq.qq.com/?_wv=1027&k=576OUne
 [downloadpage]: https://mc.kamikuz.cn/download
 [blog]: https://bb.kamikuz.cn
@@ -15,6 +15,7 @@
 [issues]: https://github.com/Kamikuz/Atorasumonogatarito/issues
 [client]: /welcome/client.md
 [test]: /test.md
+[map]: https://map.mc.kamikuz.cn/
 
 # 亚特兰斯物语·樱 :id=get-started
 
@@ -26,7 +27,7 @@
 
 ----
 
-📖[常见问题][faq] | ☁️[下载页面][downloadpage] | 🎮[问题反馈][issues] | 🐧[加入QQ交流群][qqgroup] | ~~🌍实时地图~~ | 🏠[亚特兰斯物语 聊咖][blog] | 🌸[测试服][test] | 🆔[后台管理](http://kamiku.picp.vip) | 🆔[监控](http://kamiku.picp.vip:8080)
+📖[常见问题][faq] | ☁️[下载页面][downloadpage] | 🎮[问题反馈][issues] | 🐧[加入QQ交流群][qqgroup] | [🌍实时地图][map] | 🏠[亚特兰斯物语 聊咖][blog] |
 
 ----
 
@@ -36,11 +37,11 @@
 
 主服务器`server.kamikuz.cn`
 
+国内服务器 `jp-tyo-dvm.sakurafrp.com:25158`
+
 服务器版本：`1.12.2` *城市建造*
 
 网络配置：`国内|海外`
-
-正版验证：`开启` *支持正版用户登录*
 
 第三方外置登录：`开启` *使用亚特兰斯官方皮肤站账号登录*
 
