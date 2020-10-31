@@ -1,11 +1,11 @@
 [homepage]: https://kamikuz.cn/
-[dynmap]: https://map.mc.kamikuz.cn/
+[dynmap]: https://mc.kamikuz.cn/map
 [qqgroup]: https://jq.qq.com/?_wv=1027&k=576OUne
 [downloadpage]: https://mc.kamikuz.cn/download
-[blog]: https://bb.kamikuz.cn
+[blog]: https://mc.kamikuz.cn/community
 [mcwiki]: https://minecraft-zh.gamepedia.com/
 [beginner-guide]: http://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E8%8F%9C%E9%B8%9F%E6%89%8B%E5%86%8C
-[skin]: https://skin.mc.kamikuz.cn/
+[skin]: https://mc.pixmeow.cn/
 [java]: https://www.java.com/en/download/manual.jsp
 [group-def]: /welcome/groups.md#def
 [group-adv]: /welcome/groups.md#adv
@@ -17,13 +17,11 @@
 [test]: /test.md
 [map]: https://map.mc.kamikuz.cn/
 
-# 亚特兰斯物语·樱 :id=get-started
+# Sakura | 樱 :id=get-started
 
->アトラス物語‐「さくら」| Atorasumonogatari-Sakura | 亚特兰斯物语·樱
+> PIX CRAFT · 樱
 
-?> 本网站旨在为所有玩家提供一个简洁明了、能够快速上手的指南。
-
-本网站并不是针对 Minecraft 游戏本身的知识库，它主要介绍「亚特兰斯物语 Minecraft 服务器」的特色内容。如果你想了解游戏本身的内容与玩法，请访问：🔗[Minecraft 官方百科][mcwiki]。如果是刚接触这款游戏，可以参考：🍰[菜鸟手册][beginner-guide]。
+本网站并不是针对 Minecraft 游戏本身的知识库，它主要介绍「亚特兰斯物语 Minecraft 服务器」的特色内容。如果你想了解游戏本身的内容与玩法，请访问：🔗[Minecraft 百科][mcwiki]。如果是刚接触这款游戏，可以参考：🍰[菜鸟手册][beginner-guide]。
 
 ----
 
