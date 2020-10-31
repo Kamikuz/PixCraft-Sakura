@@ -31,12 +31,6 @@
 
 ## 服务器信息 :id=server-info
 
-服务器地址：
-
-主服务器`server.kamikuz.cn`
-
-国内服务器 `jp-tyo-dvm.sakurafrp.com:25158`
-
 服务器版本：`1.12.2` *城市建造*
 
 网络配置：`国内|海外`
