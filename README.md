@@ -41,7 +41,7 @@
 
 白名单：`无`
 
-<a href="https://minecraft-mp.com/server-s272660" target="_blank"><img src="https://minecraft-mp.com/leaderboard-272660-3.png" border="0"></a>
+<a href="https://mc.pixmeow.com" target="_blank"><img src="https://minecraft-mp.com/leaderboard-272660-3.png" border="0"></a>
 
 ## 加入游戏 :id=join-us
 
