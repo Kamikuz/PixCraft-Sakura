@@ -6,7 +6,7 @@
 
 > 打造自己的二次元幻想城！
 
-[皮肤站](https://skin.pixmeow.com)
+[皮肤站](https://mc.pixmeow.com)
 [MCMOD宣传站](https://play.mcmod.cn/sv20182663.html)
 [加入我们](#get-started)
 
