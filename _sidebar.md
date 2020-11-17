@@ -11,14 +11,12 @@
 
   * [RTM模组](mods/rtm.md)
   * [红石计划](mods/projectred.md)
-  * SignPicture牌子图片
-
+  
 * 📖 插件帮助
 
   * [创世神](plugins/worldedit.md)
   * [Vexview快捷菜单](plugins/vexview.md)
   * [PlotSquared地皮插件](plugins/plotsquared.md)
-  * MainMC
 
 
 * 📖 教程
@@ -29,8 +27,8 @@
 ----
 * 🌐 链接
 
-  * [亚特兰斯物语 聊咖](https://bb.kamikuz.cn/)
-  * [亚特兰斯物语·和 皮肤站](https://mc.kamikuz.cn/)
+  * [亚特兰斯物语 聊咖](https://mc.pixmeow.com/community)
+  * [亚特兰斯物语·和 皮肤站](https://mc.pixmeow.com)
 
 ----
 

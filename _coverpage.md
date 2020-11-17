@@ -1,4 +1,4 @@
-# アトラス物語| 亚特兰斯物语 <small>Minecraft 1.12.2</small> :id=cover
+# PixCraft | Sakura · 樱 <small>Minecraft 1.12.2</small> :id=cover
 
 - 日系，电车
 - 各种二次元圣地搭建
@@ -6,7 +6,7 @@
 
 > 打造自己的二次元幻想城！
 
-[皮肤站](https://skin.mc.kamikuz.cn)
+[皮肤站](https://skin.pixmeow.com)
 [MCMOD宣传站](https://play.mcmod.cn/sv20182663.html)
 [加入我们](#get-started)
 

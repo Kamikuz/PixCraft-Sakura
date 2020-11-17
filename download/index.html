@@ -194,7 +194,7 @@
 													
 													<layout v-for="items in serverUpdtae">
 														<timeline-item :color="items.isError?'red':'green'">
-															<collapse simple style="margin=0;padding=0">
+															<collapse simple style="margin:0;padding:0">
 																<panel name="items.index" >
 																	{{items.date}}- MOE {{items.version}}
 																	<p slot="content" v-for="item in items.update">
