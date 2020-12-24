@@ -1,8 +1,8 @@
-[homepage]: https://kamikuz.cn/
-[dynmap]: https://mc.kamikuz.cn/map
-[qqgroup]: https://jq.qq.com/?_wv=1027&k=576OUne
+[homepage]: https://mc.pixmeow.com
+[dynmap]: https://mc.pixmeow.com/map
+[qqgroup]: https://jq.qq.com/?_wv=1027&k=jRRXjQPe
 [downloadpage]: https://mc.kamikuz.cn/download
-[blog]: https://mc.kamikuz.cn/community
+[blog]: https://community.pixmeow.com/t/PixCraft
 [mcwiki]: https://minecraft-zh.gamepedia.com/
 [beginner-guide]: http://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E8%8F%9C%E9%B8%9F%E6%89%8B%E5%86%8C
 [skin]: https://mc.pixmeow.cn/
@@ -79,4 +79,5 @@
 
 ----
 
-<small>目前 `樱` 服务器采用的是兼容Spigot与Forge的并且优化过的`Sponge`服务端，目前仍然存在许多bug，目前正在改善服务器运营以及客户端的性能。</small>
+<small>目前 `樱` 服务器采用的是兼容Spigot与Forge的并且优化过的`Magma`服务端，目前仍然存在许多bug，目前正在改善服务器运营以及客户端的性能。</small>
+

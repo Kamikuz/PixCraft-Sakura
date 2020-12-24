@@ -21,7 +21,6 @@
 
 * 📖 教程
 
-  * [cocricot建筑](tutorials/cocricot.md)
   * [RTM 铁路系统](tutorials/rtm.md) *研发中*
 
 ----
