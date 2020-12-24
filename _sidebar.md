@@ -15,7 +15,6 @@
 * 📖 插件帮助
 
   * [创世神](plugins/worldedit.md)
-  * [Vexview快捷菜单](plugins/vexview.md)
   * [PlotSquared地皮插件](plugins/plotsquared.md)
 
 
@@ -23,11 +22,8 @@
 
   * [RTM 铁路系统](tutorials/rtm.md) *研发中*
 
-----
-* 🌐 链接
-
-  * [亚特兰斯物语 聊咖](https://mc.pixmeow.com/community)
-  * [亚特兰斯物语·和 皮肤站](https://mc.pixmeow.com)
+<!-- ----
+* 🌐 链接 -->
 
 ----
 
