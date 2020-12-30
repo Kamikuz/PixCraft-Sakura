@@ -31,15 +31,13 @@
 
 ## 服务器信息 :id=server-info
 
-服务器版本：`1.12.2` *城市建造*
+服务器版本：`1.12.2|Forge` *城市建造*
 
 网络配置：`国内|海外`
 
 第三方外置登录：`开启` *使用亚特兰斯官方皮肤站账号登录*
 
 最大承载量：`100`
-
-白名单：`无`
 
 <a href="https://mc.pixmeow.com" target="_blank"><img src="https://minecraft-mp.com/leaderboard-272660-3.png" border="0"></a>
 

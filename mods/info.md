@@ -2,13 +2,13 @@
 
 >这里将会列出服务器所搭载的MOD信息
 
-客户端版本 **`6.3.0`** *2020/2/24*
+客户端版本 **`1.0.0 Beta`** *2021/1/1*
 
 ?> 目前信息仍在完善中~
 
 |模组|分类|版本|状态|服务器兼容性|客户端性能影响|
 |---|---|---|---|---|---|
-|[Chisels & Bits](https://www.curseforge.com/minecraft/mc-mods/chisels-bits/files)|雕刻|14.33|<span style="color:green">Release</span>|未知|未知|
+|[Chisels & Bits(雕刻)](https://www.curseforge.com/minecraft/mc-mods/chisels-bits/files)|建筑|14.33|<span style="color:green">Release</span>|未知|未知|
 |[Fureniku's Roads](https://www.curseforge.com/minecraft/mc-mods/furenikusroads)|道路|1.1.0|<span style="color:#FFB11B">Beta</span>|未知|未知|
 |[AsphaltMod](https://www.curseforge.com/minecraft/mc-mods/asphaltmod/files)|道路|2.3.0|<span style="color:green">Release</span>|未知|未知|
 |[JustEnoughIDs](https://www.curseforge.com/minecraft/mc-mods/jeid)|前置|1.0.3-48|<span style="color:green">Release</span>|未知|未知|
@@ -34,3 +34,10 @@
 |NGTLib|前置|14.23.2.2611||||
 |MrTJPCore|前置|2.1.4.43||||
 |ForgeMultipart|前置|2.6.2.83||||
+
+----
+
+## RTM 模组包
+|包名|作者|类型|版本|兼容性|性能影响|
+|---|---|---|---|---|---|---|
+|TEST|TEST|综合|1.0.0|<span style="color:#C73E3A">高</span>|<span style="color:#C73E3A">高</span>|
