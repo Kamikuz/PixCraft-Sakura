@@ -1,7 +1,7 @@
 * 🎉 欢迎^^
 
   * [客户端入门](welcome/client.md)
-  * [亚特兰斯守则](welcome/rules.md)
+  * [守则](welcome/rules.md)
   * [常用指令](welcome/commands.md)
   * [常见问题](welcome/faq.md)
   * [服务器信息](welcome/servers.md)
