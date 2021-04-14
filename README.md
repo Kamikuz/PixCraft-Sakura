@@ -1,7 +1,7 @@
 [homepage]: https://mc.pixmeow.com
 [dynmap]: https://mc.pixmeow.com/map
 [qqgroup]: https://jq.qq.com/?_wv=1027&k=jRRXjQPe
-[downloadpage]: https://mc.kamikuz.cn/download
+[downloadpage]: https://mc.pixmeow.com/user
 [blog]: https://community.pixmeow.com/t/PixCraft
 [mcwiki]: https://minecraft-zh.gamepedia.com/
 [beginner-guide]: http://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E8%8F%9C%E9%B8%9F%E6%89%8B%E5%86%8C
@@ -16,6 +16,7 @@
 [client]: /welcome/client.md
 [test]: /test.md
 [map]: https://map.mc.kamikuz.cn/
+[discord]: https://discord.gg/JcTjjH3gH2
 
 # Sakura | 樱 :id=get-started
 
@@ -25,7 +26,7 @@
 
 ----
 
-📖[常见问题][faq] | ☁️[下载页面][downloadpage] | 🎮[问题反馈][issues] | 🐧[加入QQ交流群][qqgroup] | [🌍实时地图][map] | 🏠[亚特兰斯物语 聊咖][blog] |
+📖[常见问题][faq] | ☁️[下载页面][downloadpage] | 🎮[问题反馈][issues] | 🐧[加入QQ交流群][qqgroup] | [Discord 服务器][discord] | [🌍实时地图][map] | 🏠[亚特兰斯物语 聊咖][blog] |
 
 ----
 
@@ -39,7 +40,7 @@
 
 最大承载量：`100`
 
-<a href="https://mc.pixmeow.com" target="_blank"><img src="https://minecraft-mp.com/leaderboard-272660-3.png" border="0"></a>
+<a href="https://mc.pixmeow.com" target="_blank"><img src="https://tietu.mcstatus.cn/banner/default/340/blue/2.jpg"></a>
 
 ## 加入游戏 :id=join-us
 
@@ -55,27 +56,24 @@
 
 从☕️[Java官网][java]下载
 
-目前Java所需版本为`64-bit jre1.8.0_211`
+目前Java所需版本为`64-bit JAVA8`
 
 !> ⚠️目前客户端只支持 64为Java程序。下载时请选择`Windows Offline (64-bit)`版本！⚠️
 
 
 ### 3 下载&配置客户端
 
-[》》》点击我前往客户端教程《《《][client]
-
-[》》》点击我前往客户端教程《《《][client]
-
-[》》》点击我前往客户端教程《《《][client]                                     
+[》》》点击我前往客户端教程《《《][client]                               
 
 ### 最后
 
-- 新玩家默认为[参观&摄影][group-def]权限组。
+- 新玩家默认为[参观][group-def]权限组。
 - 有任何疑问欢迎咨询[QQ群][qqgroup]向管理员反馈。
-- 服务器的最新动态、改动都会在去群内与[下载页](https://wiki.kamikuz.cn/download.html)的`服务器案内`板块第一时间发布！
+- 有能力的请务必加入我们的 [Discord][discord] 服务器
+- 服务器的最新动态、改动都会在去群内与[聊咖][blog]里第一时间发布！
 - 最后祝您游戏愉快～ヾ(◍°∇°◍)ﾉﾞ🎉🎊🎉🎊
 
 ----
 
-<small>目前 `樱` 服务器采用的是兼容Spigot与Forge的并且优化过的`Magma`服务端，目前仍然存在许多bug，目前正在改善服务器运营以及客户端的性能。</small>
+<small>目前 `樱` 服务器采用的是`Magma`服务端，目前仍然存在许多bug，目前正在改善服务器运营以及客户端的性能。</small>
 

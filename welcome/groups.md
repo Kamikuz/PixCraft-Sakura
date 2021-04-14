@@ -27,11 +27,9 @@
 
 >玩家可以自由的参观整个亚特兰斯物语的风光，但是无法进行建造。
 
-- 飞行`/fly` *essentials.fly*
-- 聊天 *essentials.chat*
-- `私人建筑世界`访问&创造模式 `/mv tp PA` & `/gm 1(0)` *mv.tp.PA* | *mv.access.PA* | *essentials.gm*
-- `PA(私人建筑世界)` ***1*** 个地皮拥有权 `/plot calim`或者`/plot auto`任意一个`1`次 *plot.claim.1* | *plot.auto.1* | *plot.visit*
-- `模板`世界限制级建造 (**需向管理员获取区域以及权限**) *mv.tp.demo* | *essentials.gm*
+- 飞行`/fly`
+- 聊天
+- 自己的建筑区域(JM 世界)
 
 ----
 
@@ -61,11 +59,6 @@
 ![2级证明](https://raw.githubusercontent.com/Kamikuz/Atorasumonogatarito/master/assets/images/class/B2.png)
 
 ### 获得条件
-
--
--
--
--
 
 ### 拥有权限
 
