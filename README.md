@@ -16,7 +16,7 @@
 [client]: /welcome/client.md
 [test]: /test.md
 [map]: https://map.mc.kamikuz.cn/
-[discord]: https://discord.gg/JcTjjH3gH2
+[discord]: https://discord.gg/mr8zvrQ2ps
 
 # Sakura | 樱 :id=get-started
 
