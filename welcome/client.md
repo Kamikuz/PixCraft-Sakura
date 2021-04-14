@@ -23,7 +23,7 @@ CUP：`i5-八代以上`
 
 ### 下载
 
-- [☁️下载页](https://mc.pixmeow.com/user) `登录后查看公告区域`
+[☁️下载页](https://mc.pixmeow.com/user) `登录后查看公告区域`
 
 ### Link Start！
 
