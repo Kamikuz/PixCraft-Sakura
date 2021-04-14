@@ -37,16 +37,18 @@ CUP：`i5-八代以上`
 - `hmcl.json` 启动器文件（看不见是应为文件属性为隐藏）⚠️请勿修改或者删除！⚠️
 
 - 选择登录方式为`外置登录(authlib-injector)`
+
     ![login](../assets/images/client/account.png)
 
 - 进入设置
+
     ![login](../assets/images/client/setting.png)
 
 - 配置好JAVA 环境以及内存
+
     !> 需要注意的是目前最小需要6G的内存才能运行
 
     ![login](../assets/images/client/java_setting.png)
-
     
 - 使用PixCraft的账号登录启动器
 - 启动游戏，并等待所有模组(RTM另外有窗口加载，完成会消失)全部完成后进入服务器
