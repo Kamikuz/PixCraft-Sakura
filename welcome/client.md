@@ -7,7 +7,7 @@
 
 ### 🖥️配置要求
 
-!> 所有配置都需要JAVA 8 **`64位`** 版本！
+!> 所有配置都需要java 8 **`64位`** 版本！
 
 系统：Windows/MacOS
 
@@ -19,7 +19,7 @@ CUP：`i5-八代以上`
 
 储存需求：`600MB`
 
-!> Java版本 `64位 jre1.8.0_211 及以上`否则会出现错误！
+!> Java版本 `64位 java8`否则会出现错误！
 
 ### 下载
 
@@ -38,12 +38,16 @@ CUP：`i5-八代以上`
 
 - 选择登录方式为`外置登录(authlib-injector)`
     ![login](../assets/images/client/account.png)
+
 - 进入设置
     ![login](../assets/images/client/setting.png)
+
 - 配置好JAVA 环境以及内存
+    !> 需要注意的是目前最小需要6G的内存才能运行
+
     ![login](../assets/images/client/java_setting.png)
 
-    !> 需要注意的是目前最小需要6G的内存才能运行
+    
 - 使用PixCraft的账号登录启动器
 - 启动游戏，并等待所有模组(RTM另外有窗口加载，完成会消失)全部完成后进入服务器
 
