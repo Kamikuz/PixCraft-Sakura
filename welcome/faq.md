@@ -2,7 +2,7 @@
 
 ## 服务器的游戏规则 :id=rules
 
-我们制定了[亚特兰守则规则](welcome/rules.md)
+我们制定了[PixCraft 规则](welcome/rules.md)
 
 ## 怎么联系管理组 :id=how-to-contact
 

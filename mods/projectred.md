@@ -11,7 +11,3 @@
 ?>具体介绍请参考 MCmod官网的介绍，这里不再成列(比较懒，内容过于复杂。)
 
 [》》》点击前往《《《](https://www.mcmod.cn/item/list/164-1.html)
-
-[》》》点击前往《《《](https://www.mcmod.cn/item/list/164-1.html)
-
-[》》》点击前往《《《](https://www.mcmod.cn/item/list/164-1.html)

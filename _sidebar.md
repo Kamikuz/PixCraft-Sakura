@@ -4,7 +4,8 @@
   * [守则](welcome/rules.md)
   * [常用指令](welcome/commands.md)
   * [常见问题](welcome/faq.md)
-  * [权限组(职位)](welcome/groups.md)
+  * [权限组](welcome/groups.md)
+  * [地图](welcome/worlds.md)
 
 * 📖 MOD帮助
 
@@ -21,6 +22,10 @@
 
   * [RTM 铁路系统](tutorials/rtm.md) *研发中*
 
+* 🔥 活动
+
+  * 暂时没有新的活动...
+
 ----
 * 🌐 链接
 
@@ -28,7 +33,6 @@
   * [服务器 论坛](https://community.pixmeow.com/t/PixCraft)
 
 ----
-
 * [👮 管理](staff.md)
 * [💰 捐助](sponsor.md)
 * [♨️ 贡献](contribution.md)

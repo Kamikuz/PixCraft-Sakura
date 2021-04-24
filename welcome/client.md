@@ -1,7 +1,7 @@
 [error]: https://github.com/Kamikuz/Atorasumonogatarito/issues
 [faq]: /welcome/faq.md
 
-## 🕹️客户端入门 :id=client
+## 🕹️客户端准备 :id=client
 
 !> 目前由于客户端`Beta`版测试阶段，大部分基础问题bug已得到修复，但是还有其他bug，尚在修复中...
 
@@ -20,6 +20,7 @@ CUP：`i5-八代以上`
 储存需求：`600MB`
 
 !> Java版本 `64位 java8`否则会出现错误！
+需要注意的是目前最小需要6G的内存才能运行
 
 ### 下载
 
@@ -46,11 +47,9 @@ CUP：`i5-八代以上`
 
 - 配置好JAVA 环境以及内存
 
-    !> 需要注意的是目前最小需要6G的内存才能运行
-
     ![login](../assets/images/client/java_setting.png)
     
 - 使用PixCraft的账号登录启动器
 - 启动游戏，并等待所有模组(RTM另外有窗口加载，完成会消失)全部完成后进入服务器
 
-?> 如果你遇到了其他问题，可以在[错误反馈][error]和[疑问解答][faq]板块寻找解决方案！
+?> 无法启动，游戏崩溃或者遇到了其他问题，可以在[错误反馈][error]和[疑问解答][faq]板块寻找解决方案！
