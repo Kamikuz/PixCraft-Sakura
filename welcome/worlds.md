@@ -22,8 +22,8 @@
 ### 圣地列表
 | 地名 | 作者 | 出处 | 建设状态 |
 | :----: | :----: | :----: | :----: |
-|京阿尼小黄屋|Kamiku|现实|<span style="color:#787878">规划中</span>|
-|秋叶原站|Kamiku|现实|<span style="color:#787878">规划中</span>|
+|秋叶原站|`Kamiku`|现实|<span style="color:#F17C67">建设中</span>|
+|京阿尼小黄屋|`Kamiku`|现实|<span style="color:#787878">规划中</span>|
 
 ----
 ## 玩家私人建筑世界 `JM`
